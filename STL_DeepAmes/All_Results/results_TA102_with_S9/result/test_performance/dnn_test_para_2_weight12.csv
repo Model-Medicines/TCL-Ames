@@ -1,0 +1,2 @@
+,name,TN,FP,FN,TP,Accuracy,AUC,Sensitivity,Specificity,PPV,NPV,F1,MCC,BA
+0,weight12,72,16,5,5,0.786,0.709,0.5,0.818,0.238,0.935,0.323,0.235,0.659
