@@ -1,0 +1,475 @@
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|>>>> START LOGGING A GMTAMES EXPERIMENT
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|mode:|mtg
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|tasks:|TA97_S9
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|testsplit:|scaffold
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|output:|mtg_experiment_scaffold
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|device:|mps
+2026-02-04 14:10:06,709|INFO|__main__.startLogging|DONE
+2026-02-04 14:10:06,709|INFO|mtg.runMTGExperiment|>>>> RUNNING MECHANISTIC TASK GROUPING EXPERIMENT
+2026-02-04 14:10:07,030|INFO|mtg.runMTGExperiment|Device confirmed:|mps
+2026-02-04 14:10:07,106|INFO|nn.loadModellingDataset|Train descriptors loaded (features, instances):|1024|1091
+2026-02-04 14:10:07,106|INFO|nn.loadModellingDataset|Train endpoints loaded (tasks, instances):|1|1091
+2026-02-04 14:10:07,116|INFO|nn.loadModellingDataset|Val descriptors loaded (features, instances):|1024|300
+2026-02-04 14:10:07,116|INFO|nn.loadModellingDataset|Val endpoints loaded (tasks, instances):|1|300
+2026-02-04 14:10:07,688|INFO|nn.computeOptunaObjective|Trial 0 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:07,689|INFO|nn.computeOptunaObjective|Trial 0 balacc:|[0.5682669390534559]
+2026-02-04 14:10:07,689|INFO|nn.computeOptunaObjective|Trial 0 rocauc:|[0.7446373850868233]
+2026-02-04 14:10:07,689|INFO|nn.computeOptunaObjective|Trial 0 timings:|0.5717600420030067
+2026-02-04 14:10:07,689|INFO|nn.computeOptunaObjective|Trial 0 objective:|0.5682669390534559
+2026-02-04 14:10:07,939|INFO|nn.computeOptunaObjective|Trial 1 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:07,939|INFO|nn.computeOptunaObjective|Trial 1 balacc:|[0.5]
+2026-02-04 14:10:07,939|INFO|nn.computeOptunaObjective|Trial 1 rocauc:|[0.766201339235047]
+2026-02-04 14:10:07,939|INFO|nn.computeOptunaObjective|Trial 1 timings:|0.25001049999991665
+2026-02-04 14:10:07,939|INFO|nn.computeOptunaObjective|Trial 1 objective:|0.5
+2026-02-04 14:10:08,146|INFO|nn.computeOptunaObjective|Trial 2 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:08,146|INFO|nn.computeOptunaObjective|Trial 2 balacc:|[0.564521620701396]
+2026-02-04 14:10:08,146|INFO|nn.computeOptunaObjective|Trial 2 rocauc:|[0.7363522869140846]
+2026-02-04 14:10:08,146|INFO|nn.computeOptunaObjective|Trial 2 timings:|0.20672133400148596
+2026-02-04 14:10:08,146|INFO|nn.computeOptunaObjective|Trial 2 objective:|0.564521620701396
+2026-02-04 14:10:08,757|INFO|nn.computeOptunaObjective|Trial 3 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:08,757|INFO|nn.computeOptunaObjective|Trial 3 balacc:|[0.5815457950289411]
+2026-02-04 14:10:08,757|INFO|nn.computeOptunaObjective|Trial 3 rocauc:|[0.7397571217795937]
+2026-02-04 14:10:08,757|INFO|nn.computeOptunaObjective|Trial 3 timings:|0.6111444160014798
+2026-02-04 14:10:08,757|INFO|nn.computeOptunaObjective|Trial 3 objective:|0.5815457950289411
+2026-02-04 14:10:09,319|INFO|nn.computeOptunaObjective|Trial 4 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:09,319|INFO|nn.computeOptunaObjective|Trial 4 balacc:|[0.5417092271024855]
+2026-02-04 14:10:09,319|INFO|nn.computeOptunaObjective|Trial 4 rocauc:|[0.7448643740778573]
+2026-02-04 14:10:09,319|INFO|nn.computeOptunaObjective|Trial 4 timings:|0.5612347499991301
+2026-02-04 14:10:09,319|INFO|nn.computeOptunaObjective|Trial 4 objective:|0.5417092271024855
+2026-02-04 14:10:09,668|INFO|nn.computeOptunaObjective|Trial 5 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:09,668|INFO|nn.computeOptunaObjective|Trial 5 balacc:|[0.5796731358529111]
+2026-02-04 14:10:09,668|INFO|nn.computeOptunaObjective|Trial 5 rocauc:|[0.7398706162751105]
+2026-02-04 14:10:09,668|INFO|nn.computeOptunaObjective|Trial 5 timings:|0.3485082080005668
+2026-02-04 14:10:09,668|INFO|nn.computeOptunaObjective|Trial 5 objective:|0.5796731358529111
+2026-02-04 14:10:09,909|INFO|nn.computeOptunaObjective|Trial 6 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:09,909|INFO|nn.computeOptunaObjective|Trial 6 balacc:|[0.562648961525366]
+2026-02-04 14:10:09,909|INFO|nn.computeOptunaObjective|Trial 6 rocauc:|[0.7396436272840767]
+2026-02-04 14:10:09,909|INFO|nn.computeOptunaObjective|Trial 6 timings:|0.2411374170005729
+2026-02-04 14:10:09,909|INFO|nn.computeOptunaObjective|Trial 6 objective:|0.562648961525366
+2026-02-04 14:10:10,121|INFO|nn.computeOptunaObjective|Trial 7 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:10,121|INFO|nn.computeOptunaObjective|Trial 7 balacc:|[0.564521620701396]
+2026-02-04 14:10:10,121|INFO|nn.computeOptunaObjective|Trial 7 rocauc:|[0.7406650777437294]
+2026-02-04 14:10:10,121|INFO|nn.computeOptunaObjective|Trial 7 timings:|0.21079974999884143
+2026-02-04 14:10:10,121|INFO|nn.computeOptunaObjective|Trial 7 objective:|0.564521620701396
+2026-02-04 14:10:10,309|INFO|nn.computeOptunaObjective|Trial 8 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:10,309|INFO|nn.computeOptunaObjective|Trial 8 balacc:|[0.5948246510044263]
+2026-02-04 14:10:10,309|INFO|nn.computeOptunaObjective|Trial 8 rocauc:|[0.7444103960957893]
+2026-02-04 14:10:10,309|INFO|nn.computeOptunaObjective|Trial 8 timings:|0.1876832089983509
+2026-02-04 14:10:10,309|INFO|nn.computeOptunaObjective|Trial 8 objective:|0.5948246510044263
+2026-02-04 14:10:10,571|INFO|nn.computeOptunaObjective|Trial 9 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:10,571|INFO|nn.computeOptunaObjective|Trial 9 balacc:|[0.5587334014300307]
+2026-02-04 14:10:10,571|INFO|nn.computeOptunaObjective|Trial 9 rocauc:|[0.738508682328907]
+2026-02-04 14:10:10,571|INFO|nn.computeOptunaObjective|Trial 9 timings:|0.26179320799928973
+2026-02-04 14:10:10,571|INFO|nn.computeOptunaObjective|Trial 9 objective:|0.5587334014300307
+2026-02-04 14:10:10,868|INFO|nn.computeOptunaObjective|Trial 10 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:10,869|INFO|nn.computeOptunaObjective|Trial 10 balacc:|[0.5]
+2026-02-04 14:10:10,869|INFO|nn.computeOptunaObjective|Trial 10 rocauc:|[0.7624560208829873]
+2026-02-04 14:10:10,869|INFO|nn.computeOptunaObjective|Trial 10 timings:|0.2971467089992075
+2026-02-04 14:10:10,869|INFO|nn.computeOptunaObjective|Trial 10 objective:|0.5
+2026-02-04 14:10:11,018|INFO|nn.computeOptunaObjective|Trial 11 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:11,018|INFO|nn.computeOptunaObjective|Trial 11 balacc:|[0.564521620701396]
+2026-02-04 14:10:11,018|INFO|nn.computeOptunaObjective|Trial 11 rocauc:|[0.7448643740778572]
+2026-02-04 14:10:11,018|INFO|nn.computeOptunaObjective|Trial 11 timings:|0.1491299999979674
+2026-02-04 14:10:11,018|INFO|nn.computeOptunaObjective|Trial 11 objective:|0.564521620701396
+2026-02-04 14:10:11,299|INFO|nn.computeOptunaObjective|Trial 12 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:11,299|INFO|nn.computeOptunaObjective|Trial 12 balacc:|[0.5151515151515151]
+2026-02-04 14:10:11,299|INFO|nn.computeOptunaObjective|Trial 12 rocauc:|[0.7470207694926796]
+2026-02-04 14:10:11,299|INFO|nn.computeOptunaObjective|Trial 12 timings:|0.2807483329997922
+2026-02-04 14:10:11,299|INFO|nn.computeOptunaObjective|Trial 12 objective:|0.5151515151515151
+2026-02-04 14:10:11,636|INFO|nn.computeOptunaObjective|Trial 13 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:11,636|INFO|nn.computeOptunaObjective|Trial 13 balacc:|[0.5435818862785154]
+2026-02-04 14:10:11,636|INFO|nn.computeOptunaObjective|Trial 13 rocauc:|[0.7410055612302803]
+2026-02-04 14:10:11,636|INFO|nn.computeOptunaObjective|Trial 13 timings:|0.3366205419988546
+2026-02-04 14:10:11,636|INFO|nn.computeOptunaObjective|Trial 13 objective:|0.5435818862785154
+2026-02-04 14:10:11,820|INFO|nn.computeOptunaObjective|Trial 14 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:11,820|INFO|nn.computeOptunaObjective|Trial 14 balacc:|[0.566394279877426]
+2026-02-04 14:10:11,821|INFO|nn.computeOptunaObjective|Trial 14 rocauc:|[0.7470207694926796]
+2026-02-04 14:10:11,821|INFO|nn.computeOptunaObjective|Trial 14 timings:|0.18367312500049593
+2026-02-04 14:10:11,821|INFO|nn.computeOptunaObjective|Trial 14 objective:|0.566394279877426
+2026-02-04 14:10:12,254|INFO|nn.computeOptunaObjective|Trial 15 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:12,254|INFO|nn.computeOptunaObjective|Trial 15 balacc:|[0.564521620701396]
+2026-02-04 14:10:12,254|INFO|nn.computeOptunaObjective|Trial 15 rocauc:|[0.7407785722392464]
+2026-02-04 14:10:12,254|INFO|nn.computeOptunaObjective|Trial 15 timings:|0.43286362499929965
+2026-02-04 14:10:12,254|INFO|nn.computeOptunaObjective|Trial 15 objective:|0.564521620701396
+2026-02-04 14:10:12,525|INFO|nn.computeOptunaObjective|Trial 16 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:12,525|INFO|nn.computeOptunaObjective|Trial 16 balacc:|[0.562648961525366]
+2026-02-04 14:10:12,525|INFO|nn.computeOptunaObjective|Trial 16 rocauc:|[0.7274997162637612]
+2026-02-04 14:10:12,525|INFO|nn.computeOptunaObjective|Trial 16 timings:|0.27069399999891175
+2026-02-04 14:10:12,525|INFO|nn.computeOptunaObjective|Trial 16 objective:|0.562648961525366
+2026-02-04 14:10:12,899|INFO|nn.computeOptunaObjective|Trial 17 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:12,899|INFO|nn.computeOptunaObjective|Trial 17 balacc:|[0.5587334014300307]
+2026-02-04 14:10:12,899|INFO|nn.computeOptunaObjective|Trial 17 rocauc:|[0.7358983089320168]
+2026-02-04 14:10:12,899|INFO|nn.computeOptunaObjective|Trial 17 timings:|0.3734719590029272
+2026-02-04 14:10:12,899|INFO|nn.computeOptunaObjective|Trial 17 objective:|0.5587334014300307
+2026-02-04 14:10:13,328|INFO|nn.computeOptunaObjective|Trial 18 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:13,328|INFO|nn.computeOptunaObjective|Trial 18 balacc:|[0.5985699693564862]
+2026-02-04 14:10:13,328|INFO|nn.computeOptunaObjective|Trial 18 rocauc:|[0.742254000680967]
+2026-02-04 14:10:13,328|INFO|nn.computeOptunaObjective|Trial 18 timings:|0.4289989169992623
+2026-02-04 14:10:13,329|INFO|nn.computeOptunaObjective|Trial 18 objective:|0.5985699693564862
+2026-02-04 14:10:13,675|INFO|nn.computeOptunaObjective|Trial 19 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:13,675|INFO|nn.computeOptunaObjective|Trial 19 balacc:|[0.5303030303030303]
+2026-02-04 14:10:13,675|INFO|nn.computeOptunaObjective|Trial 19 rocauc:|[0.7466802860061287]
+2026-02-04 14:10:13,675|INFO|nn.computeOptunaObjective|Trial 19 timings:|0.345708332999493
+2026-02-04 14:10:13,675|INFO|nn.computeOptunaObjective|Trial 19 objective:|0.5303030303030303
+2026-02-04 14:10:13,989|INFO|nn.computeOptunaObjective|Trial 20 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:13,990|INFO|nn.computeOptunaObjective|Trial 20 balacc:|[0.562648961525366]
+2026-02-04 14:10:13,990|INFO|nn.computeOptunaObjective|Trial 20 rocauc:|[0.7323799795709908]
+2026-02-04 14:10:13,990|INFO|nn.computeOptunaObjective|Trial 20 timings:|0.31435270799920545
+2026-02-04 14:10:13,990|INFO|nn.computeOptunaObjective|Trial 20 objective:|0.562648961525366
+2026-02-04 14:10:14,147|INFO|nn.computeOptunaObjective|Trial 21 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:14,147|INFO|nn.computeOptunaObjective|Trial 21 balacc:|[0.5]
+2026-02-04 14:10:14,147|INFO|nn.computeOptunaObjective|Trial 21 rocauc:|[0.7504256043581886]
+2026-02-04 14:10:14,147|INFO|nn.computeOptunaObjective|Trial 21 timings:|0.1570507920005184
+2026-02-04 14:10:14,147|INFO|nn.computeOptunaObjective|Trial 21 objective:|0.5
+2026-02-04 14:10:14,507|INFO|nn.computeOptunaObjective|Trial 22 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:14,507|INFO|nn.computeOptunaObjective|Trial 22 balacc:|[0.5435818862785154]
+2026-02-04 14:10:14,507|INFO|nn.computeOptunaObjective|Trial 22 rocauc:|[0.7365792759051186]
+2026-02-04 14:10:14,507|INFO|nn.computeOptunaObjective|Trial 22 timings:|0.3592452500015497
+2026-02-04 14:10:14,507|INFO|nn.computeOptunaObjective|Trial 22 objective:|0.5435818862785154
+2026-02-04 14:10:14,713|INFO|nn.computeOptunaObjective|Trial 23 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:14,714|INFO|nn.computeOptunaObjective|Trial 23 balacc:|[0.5303030303030303]
+2026-02-04 14:10:14,714|INFO|nn.computeOptunaObjective|Trial 23 rocauc:|[0.7512200658268074]
+2026-02-04 14:10:14,714|INFO|nn.computeOptunaObjective|Trial 23 timings:|0.2062376249996305
+2026-02-04 14:10:14,714|INFO|nn.computeOptunaObjective|Trial 23 objective:|0.5303030303030303
+2026-02-04 14:10:15,039|INFO|nn.computeOptunaObjective|Trial 24 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:15,039|INFO|nn.computeOptunaObjective|Trial 24 balacc:|[0.5815457950289411]
+2026-02-04 14:10:15,039|INFO|nn.computeOptunaObjective|Trial 24 rocauc:|[0.7431619566451028]
+2026-02-04 14:10:15,039|INFO|nn.computeOptunaObjective|Trial 24 timings:|0.3246739170026558
+2026-02-04 14:10:15,039|INFO|nn.computeOptunaObjective|Trial 24 objective:|0.5815457950289411
+2026-02-04 14:10:15,320|INFO|nn.computeOptunaObjective|Trial 25 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:15,320|INFO|nn.computeOptunaObjective|Trial 25 balacc:|[0.5948246510044263]
+2026-02-04 14:10:15,320|INFO|nn.computeOptunaObjective|Trial 25 rocauc:|[0.7452616048121666]
+2026-02-04 14:10:15,320|INFO|nn.computeOptunaObjective|Trial 25 timings:|0.2805114590009907
+2026-02-04 14:10:15,320|INFO|nn.computeOptunaObjective|Trial 25 objective:|0.5948246510044263
+2026-02-04 14:10:15,496|INFO|nn.computeOptunaObjective|Trial 26 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:15,497|INFO|nn.computeOptunaObjective|Trial 26 balacc:|[0.5303030303030303]
+2026-02-04 14:10:15,497|INFO|nn.computeOptunaObjective|Trial 26 rocauc:|[0.7478152309612984]
+2026-02-04 14:10:15,497|INFO|nn.computeOptunaObjective|Trial 26 timings:|0.17622962499808636
+2026-02-04 14:10:15,497|INFO|nn.computeOptunaObjective|Trial 26 objective:|0.5303030303030303
+2026-02-04 14:10:15,716|INFO|nn.computeOptunaObjective|Trial 27 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:15,717|INFO|nn.computeOptunaObjective|Trial 27 balacc:|[0.564521620701396]
+2026-02-04 14:10:15,717|INFO|nn.computeOptunaObjective|Trial 27 rocauc:|[0.7512200658268073]
+2026-02-04 14:10:15,717|INFO|nn.computeOptunaObjective|Trial 27 timings:|0.21947733399792924
+2026-02-04 14:10:15,717|INFO|nn.computeOptunaObjective|Trial 27 objective:|0.564521620701396
+2026-02-04 14:10:15,934|INFO|nn.computeOptunaObjective|Trial 28 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:15,934|INFO|nn.computeOptunaObjective|Trial 28 balacc:|[0.5587334014300307]
+2026-02-04 14:10:15,934|INFO|nn.computeOptunaObjective|Trial 28 rocauc:|[0.7467937805016457]
+2026-02-04 14:10:15,934|INFO|nn.computeOptunaObjective|Trial 28 timings:|0.21707741700083716
+2026-02-04 14:10:15,934|INFO|nn.computeOptunaObjective|Trial 28 objective:|0.5587334014300307
+2026-02-04 14:10:16,142|INFO|nn.computeOptunaObjective|Trial 29 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:16,142|INFO|nn.computeOptunaObjective|Trial 29 balacc:|[0.562648961525366]
+2026-02-04 14:10:16,142|INFO|nn.computeOptunaObjective|Trial 29 rocauc:|[0.7296561116785836]
+2026-02-04 14:10:16,142|INFO|nn.computeOptunaObjective|Trial 29 timings:|0.20742824999979348
+2026-02-04 14:10:16,142|INFO|nn.computeOptunaObjective|Trial 29 objective:|0.562648961525366
+2026-02-04 14:10:16,355|INFO|nn.computeOptunaObjective|Trial 30 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:16,355|INFO|nn.computeOptunaObjective|Trial 30 balacc:|[0.564521620701396]
+2026-02-04 14:10:16,355|INFO|nn.computeOptunaObjective|Trial 30 rocauc:|[0.7366927704006356]
+2026-02-04 14:10:16,355|INFO|nn.computeOptunaObjective|Trial 30 timings:|0.2124955420003971
+2026-02-04 14:10:16,355|INFO|nn.computeOptunaObjective|Trial 30 objective:|0.564521620701396
+2026-02-04 14:10:16,485|INFO|nn.computeOptunaObjective|Trial 31 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:16,485|INFO|nn.computeOptunaObjective|Trial 31 balacc:|[0.5]
+2026-02-04 14:10:16,485|INFO|nn.computeOptunaObjective|Trial 31 rocauc:|[0.7324934740665078]
+2026-02-04 14:10:16,485|INFO|nn.computeOptunaObjective|Trial 31 timings:|0.12943479100067634
+2026-02-04 14:10:16,485|INFO|nn.computeOptunaObjective|Trial 31 objective:|0.5
+2026-02-04 14:10:16,627|INFO|nn.computeOptunaObjective|Trial 32 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:16,627|INFO|nn.computeOptunaObjective|Trial 32 balacc:|[0.564521620701396]
+2026-02-04 14:10:16,627|INFO|nn.computeOptunaObjective|Trial 32 rocauc:|[0.7407785722392464]
+2026-02-04 14:10:16,627|INFO|nn.computeOptunaObjective|Trial 32 timings:|0.1415429580010823
+2026-02-04 14:10:16,628|INFO|nn.computeOptunaObjective|Trial 32 objective:|0.564521620701396
+2026-02-04 14:10:16,953|INFO|nn.computeOptunaObjective|Trial 33 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:16,953|INFO|nn.computeOptunaObjective|Trial 33 balacc:|[0.5778004766768812]
+2026-02-04 14:10:16,953|INFO|nn.computeOptunaObjective|Trial 33 rocauc:|[0.7209170355237771]
+2026-02-04 14:10:16,953|INFO|nn.computeOptunaObjective|Trial 33 timings:|0.32465658400178654
+2026-02-04 14:10:16,953|INFO|nn.computeOptunaObjective|Trial 33 objective:|0.5778004766768812
+2026-02-04 14:10:17,185|INFO|nn.computeOptunaObjective|Trial 34 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:17,185|INFO|nn.computeOptunaObjective|Trial 34 balacc:|[0.5587334014300307]
+2026-02-04 14:10:17,185|INFO|nn.computeOptunaObjective|Trial 34 rocauc:|[0.7446373850868233]
+2026-02-04 14:10:17,185|INFO|nn.computeOptunaObjective|Trial 34 timings:|0.2313467909989413
+2026-02-04 14:10:17,185|INFO|nn.computeOptunaObjective|Trial 34 objective:|0.5587334014300307
+2026-02-04 14:10:17,374|INFO|nn.computeOptunaObjective|Trial 35 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:17,374|INFO|nn.computeOptunaObjective|Trial 35 balacc:|[0.5]
+2026-02-04 14:10:17,374|INFO|nn.computeOptunaObjective|Trial 35 rocauc:|[0.7554193621609352]
+2026-02-04 14:10:17,374|INFO|nn.computeOptunaObjective|Trial 35 timings:|0.18877449999854434
+2026-02-04 14:10:17,374|INFO|nn.computeOptunaObjective|Trial 35 objective:|0.5
+2026-02-04 14:10:17,608|INFO|nn.computeOptunaObjective|Trial 36 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:17,608|INFO|nn.computeOptunaObjective|Trial 36 balacc:|[0.564521620701396]
+2026-02-04 14:10:17,608|INFO|nn.computeOptunaObjective|Trial 36 rocauc:|[0.745545341050959]
+2026-02-04 14:10:17,608|INFO|nn.computeOptunaObjective|Trial 36 timings:|0.23296312499951455
+2026-02-04 14:10:17,608|INFO|nn.computeOptunaObjective|Trial 36 objective:|0.564521620701396
+2026-02-04 14:10:17,818|INFO|nn.computeOptunaObjective|Trial 37 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:17,819|INFO|nn.computeOptunaObjective|Trial 37 balacc:|[0.5151515151515151]
+2026-02-04 14:10:17,819|INFO|nn.computeOptunaObjective|Trial 37 rocauc:|[0.7536034502326636]
+2026-02-04 14:10:17,819|INFO|nn.computeOptunaObjective|Trial 37 timings:|0.21032724999895436
+2026-02-04 14:10:17,819|INFO|nn.computeOptunaObjective|Trial 37 objective:|0.5151515151515151
+2026-02-04 14:10:18,039|INFO|nn.computeOptunaObjective|Trial 38 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:18,039|INFO|nn.computeOptunaObjective|Trial 38 balacc:|[0.562648961525366]
+2026-02-04 14:10:18,039|INFO|nn.computeOptunaObjective|Trial 38 rocauc:|[0.7227329474520485]
+2026-02-04 14:10:18,039|INFO|nn.computeOptunaObjective|Trial 38 timings:|0.2194585420002113
+2026-02-04 14:10:18,039|INFO|nn.computeOptunaObjective|Trial 38 objective:|0.562648961525366
+2026-02-04 14:10:18,396|INFO|nn.computeOptunaObjective|Trial 39 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:18,396|INFO|nn.computeOptunaObjective|Trial 39 balacc:|[0.5948246510044263]
+2026-02-04 14:10:18,396|INFO|nn.computeOptunaObjective|Trial 39 rocauc:|[0.7407785722392464]
+2026-02-04 14:10:18,396|INFO|nn.computeOptunaObjective|Trial 39 timings:|0.3568847079986881
+2026-02-04 14:10:18,396|INFO|nn.computeOptunaObjective|Trial 39 objective:|0.5948246510044263
+2026-02-04 14:10:18,589|INFO|nn.computeOptunaObjective|Trial 40 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:18,589|INFO|nn.computeOptunaObjective|Trial 40 balacc:|[0.5151515151515151]
+2026-02-04 14:10:18,589|INFO|nn.computeOptunaObjective|Trial 40 rocauc:|[0.7327204630575417]
+2026-02-04 14:10:18,589|INFO|nn.computeOptunaObjective|Trial 40 timings:|0.19185766700320528
+2026-02-04 14:10:18,589|INFO|nn.computeOptunaObjective|Trial 40 objective:|0.5151515151515151
+2026-02-04 14:10:19,022|INFO|nn.computeOptunaObjective|Trial 41 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:19,022|INFO|nn.computeOptunaObjective|Trial 41 balacc:|[0.5454545454545454]
+2026-02-04 14:10:19,022|INFO|nn.computeOptunaObjective|Trial 41 rocauc:|[0.7461128135285439]
+2026-02-04 14:10:19,022|INFO|nn.computeOptunaObjective|Trial 41 timings:|0.4324457499969867
+2026-02-04 14:10:19,022|INFO|nn.computeOptunaObjective|Trial 41 objective:|0.5454545454545454
+2026-02-04 14:10:19,290|INFO|nn.computeOptunaObjective|Trial 42 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:19,290|INFO|nn.computeOptunaObjective|Trial 42 balacc:|[0.5132788559754852]
+2026-02-04 14:10:19,290|INFO|nn.computeOptunaObjective|Trial 42 rocauc:|[0.7377142208602883]
+2026-02-04 14:10:19,290|INFO|nn.computeOptunaObjective|Trial 42 timings:|0.2670980420007254
+2026-02-04 14:10:19,290|INFO|nn.computeOptunaObjective|Trial 42 objective:|0.5132788559754852
+2026-02-04 14:10:19,452|INFO|nn.computeOptunaObjective|Trial 43 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:19,452|INFO|nn.computeOptunaObjective|Trial 43 balacc:|[0.564521620701396]
+2026-02-04 14:10:19,452|INFO|nn.computeOptunaObjective|Trial 43 rocauc:|[0.7462263080240608]
+2026-02-04 14:10:19,453|INFO|nn.computeOptunaObjective|Trial 43 timings:|0.16209954199803178
+2026-02-04 14:10:19,453|INFO|nn.computeOptunaObjective|Trial 43 objective:|0.564521620701396
+2026-02-04 14:10:19,712|INFO|nn.computeOptunaObjective|Trial 44 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:19,712|INFO|nn.computeOptunaObjective|Trial 44 balacc:|[0.5]
+2026-02-04 14:10:19,712|INFO|nn.computeOptunaObjective|Trial 44 rocauc:|[0.7395301327885597]
+2026-02-04 14:10:19,712|INFO|nn.computeOptunaObjective|Trial 44 timings:|0.2589266670001962
+2026-02-04 14:10:19,712|INFO|nn.computeOptunaObjective|Trial 44 objective:|0.5
+2026-02-04 14:10:19,881|INFO|nn.computeOptunaObjective|Trial 45 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:19,881|INFO|nn.computeOptunaObjective|Trial 45 balacc:|[0.5]
+2026-02-04 14:10:19,881|INFO|nn.computeOptunaObjective|Trial 45 rocauc:|[0.7608670979457497]
+2026-02-04 14:10:19,881|INFO|nn.computeOptunaObjective|Trial 45 timings:|0.16792766700018547
+2026-02-04 14:10:19,881|INFO|nn.computeOptunaObjective|Trial 45 objective:|0.5
+2026-02-04 14:10:20,059|INFO|nn.computeOptunaObjective|Trial 46 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:20,059|INFO|nn.computeOptunaObjective|Trial 46 balacc:|[0.5]
+2026-02-04 14:10:20,059|INFO|nn.computeOptunaObjective|Trial 46 rocauc:|[0.6676881171263194]
+2026-02-04 14:10:20,059|INFO|nn.computeOptunaObjective|Trial 46 timings:|0.17794399999911548
+2026-02-04 14:10:20,059|INFO|nn.computeOptunaObjective|Trial 46 objective:|0.5
+2026-02-04 14:10:20,340|INFO|nn.computeOptunaObjective|Trial 47 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:20,340|INFO|nn.computeOptunaObjective|Trial 47 balacc:|[0.564521620701396]
+2026-02-04 14:10:20,340|INFO|nn.computeOptunaObjective|Trial 47 rocauc:|[0.7347633639768472]
+2026-02-04 14:10:20,340|INFO|nn.computeOptunaObjective|Trial 47 timings:|0.2800247910017788
+2026-02-04 14:10:20,340|INFO|nn.computeOptunaObjective|Trial 47 objective:|0.564521620701396
+2026-02-04 14:10:20,655|INFO|nn.computeOptunaObjective|Trial 48 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:20,655|INFO|nn.computeOptunaObjective|Trial 48 balacc:|[0.5303030303030303]
+2026-02-04 14:10:20,655|INFO|nn.computeOptunaObjective|Trial 48 rocauc:|[0.752581999773011]
+2026-02-04 14:10:20,655|INFO|nn.computeOptunaObjective|Trial 48 timings:|0.31411779200061574
+2026-02-04 14:10:20,655|INFO|nn.computeOptunaObjective|Trial 48 objective:|0.5303030303030303
+2026-02-04 14:10:20,880|INFO|nn.computeOptunaObjective|Trial 49 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:20,880|INFO|nn.computeOptunaObjective|Trial 49 balacc:|[0.564521620701396]
+2026-02-04 14:10:20,880|INFO|nn.computeOptunaObjective|Trial 49 rocauc:|[0.7364657814096016]
+2026-02-04 14:10:20,880|INFO|nn.computeOptunaObjective|Trial 49 timings:|0.2240339589989162
+2026-02-04 14:10:20,880|INFO|nn.computeOptunaObjective|Trial 49 objective:|0.564521620701396
+2026-02-04 14:10:21,103|INFO|nn.computeOptunaObjective|Trial 50 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:21,103|INFO|nn.computeOptunaObjective|Trial 50 balacc:|[0.564521620701396]
+2026-02-04 14:10:21,103|INFO|nn.computeOptunaObjective|Trial 50 rocauc:|[0.7374872318692544]
+2026-02-04 14:10:21,103|INFO|nn.computeOptunaObjective|Trial 50 timings:|0.22207783299745643
+2026-02-04 14:10:21,103|INFO|nn.computeOptunaObjective|Trial 50 objective:|0.564521620701396
+2026-02-04 14:10:21,307|INFO|nn.computeOptunaObjective|Trial 51 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:21,307|INFO|nn.computeOptunaObjective|Trial 51 balacc:|[0.5796731358529111]
+2026-02-04 14:10:21,307|INFO|nn.computeOptunaObjective|Trial 51 rocauc:|[0.7494609011462944]
+2026-02-04 14:10:21,307|INFO|nn.computeOptunaObjective|Trial 51 timings:|0.20332120899911388
+2026-02-04 14:10:21,307|INFO|nn.computeOptunaObjective|Trial 51 objective:|0.5796731358529111
+2026-02-04 14:10:21,438|INFO|nn.computeOptunaObjective|Trial 52 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:21,438|INFO|nn.computeOptunaObjective|Trial 52 balacc:|[0.5]
+2026-02-04 14:10:21,438|INFO|nn.computeOptunaObjective|Trial 52 rocauc:|[0.7332879355351265]
+2026-02-04 14:10:21,438|INFO|nn.computeOptunaObjective|Trial 52 timings:|0.1300498329983384
+2026-02-04 14:10:21,438|INFO|nn.computeOptunaObjective|Trial 52 objective:|0.5
+2026-02-04 14:10:21,659|INFO|nn.computeOptunaObjective|Trial 53 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:21,659|INFO|nn.computeOptunaObjective|Trial 53 balacc:|[0.5]
+2026-02-04 14:10:21,659|INFO|nn.computeOptunaObjective|Trial 53 rocauc:|[0.759845647486097]
+2026-02-04 14:10:21,659|INFO|nn.computeOptunaObjective|Trial 53 timings:|0.22008970900060376
+2026-02-04 14:10:21,659|INFO|nn.computeOptunaObjective|Trial 53 objective:|0.5
+2026-02-04 14:10:21,940|INFO|nn.computeOptunaObjective|Trial 54 params:|{'n_layers': 3, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:21,940|INFO|nn.computeOptunaObjective|Trial 54 balacc:|[0.564521620701396]
+2026-02-04 14:10:21,940|INFO|nn.computeOptunaObjective|Trial 54 rocauc:|[0.7363522869140847]
+2026-02-04 14:10:21,940|INFO|nn.computeOptunaObjective|Trial 54 timings:|0.2808092079976632
+2026-02-04 14:10:21,940|INFO|nn.computeOptunaObjective|Trial 54 objective:|0.564521620701396
+2026-02-04 14:10:22,193|INFO|nn.computeOptunaObjective|Trial 55 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:22,193|INFO|nn.computeOptunaObjective|Trial 55 balacc:|[0.5948246510044263]
+2026-02-04 14:10:22,193|INFO|nn.computeOptunaObjective|Trial 55 rocauc:|[0.7517307910566338]
+2026-02-04 14:10:22,193|INFO|nn.computeOptunaObjective|Trial 55 timings:|0.25196854200112284
+2026-02-04 14:10:22,193|INFO|nn.computeOptunaObjective|Trial 55 objective:|0.5948246510044263
+2026-02-04 14:10:22,523|INFO|nn.computeOptunaObjective|Trial 56 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:22,523|INFO|nn.computeOptunaObjective|Trial 56 balacc:|[0.5417092271024855]
+2026-02-04 14:10:22,523|INFO|nn.computeOptunaObjective|Trial 56 rocauc:|[0.7512200658268074]
+2026-02-04 14:10:22,523|INFO|nn.computeOptunaObjective|Trial 56 timings:|0.3290177920025599
+2026-02-04 14:10:22,523|INFO|nn.computeOptunaObjective|Trial 56 objective:|0.5417092271024855
+2026-02-04 14:10:22,749|INFO|nn.computeOptunaObjective|Trial 57 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:22,749|INFO|nn.computeOptunaObjective|Trial 57 balacc:|[0.5587334014300307]
+2026-02-04 14:10:22,749|INFO|nn.computeOptunaObjective|Trial 57 rocauc:|[0.7404380887526955]
+2026-02-04 14:10:22,749|INFO|nn.computeOptunaObjective|Trial 57 timings:|0.22537779200138175
+2026-02-04 14:10:22,749|INFO|nn.computeOptunaObjective|Trial 57 objective:|0.5587334014300307
+2026-02-04 14:10:23,088|INFO|nn.computeOptunaObjective|Trial 58 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:23,088|INFO|nn.computeOptunaObjective|Trial 58 balacc:|[0.5435818862785154]
+2026-02-04 14:10:23,088|INFO|nn.computeOptunaObjective|Trial 58 rocauc:|[0.7514470548178412]
+2026-02-04 14:10:23,088|INFO|nn.computeOptunaObjective|Trial 58 timings:|0.33838070800265996
+2026-02-04 14:10:23,088|INFO|nn.computeOptunaObjective|Trial 58 objective:|0.5435818862785154
+2026-02-04 14:10:23,266|INFO|nn.computeOptunaObjective|Trial 59 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:23,266|INFO|nn.computeOptunaObjective|Trial 59 balacc:|[0.5151515151515151]
+2026-02-04 14:10:23,266|INFO|nn.computeOptunaObjective|Trial 59 rocauc:|[0.748723186925434]
+2026-02-04 14:10:23,266|INFO|nn.computeOptunaObjective|Trial 59 timings:|0.17677491699942038
+2026-02-04 14:10:23,266|INFO|nn.computeOptunaObjective|Trial 59 objective:|0.5151515151515151
+2026-02-04 14:10:23,482|INFO|nn.computeOptunaObjective|Trial 60 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:23,483|INFO|nn.computeOptunaObjective|Trial 60 balacc:|[0.5151515151515151]
+2026-02-04 14:10:23,483|INFO|nn.computeOptunaObjective|Trial 60 rocauc:|[0.7467937805016457]
+2026-02-04 14:10:23,483|INFO|nn.computeOptunaObjective|Trial 60 timings:|0.21591279199856217
+2026-02-04 14:10:23,483|INFO|nn.computeOptunaObjective|Trial 60 objective:|0.5151515151515151
+2026-02-04 14:10:23,708|INFO|nn.computeOptunaObjective|Trial 61 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:23,708|INFO|nn.computeOptunaObjective|Trial 61 balacc:|[0.5587334014300307]
+2026-02-04 14:10:23,708|INFO|nn.computeOptunaObjective|Trial 61 rocauc:|[0.7471342639881966]
+2026-02-04 14:10:23,708|INFO|nn.computeOptunaObjective|Trial 61 timings:|0.22421029199904297
+2026-02-04 14:10:23,708|INFO|nn.computeOptunaObjective|Trial 61 objective:|0.5587334014300307
+2026-02-04 14:10:23,887|INFO|nn.computeOptunaObjective|Trial 62 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:23,887|INFO|nn.computeOptunaObjective|Trial 62 balacc:|[0.564521620701396]
+2026-02-04 14:10:23,887|INFO|nn.computeOptunaObjective|Trial 62 rocauc:|[0.7364657814096016]
+2026-02-04 14:10:23,887|INFO|nn.computeOptunaObjective|Trial 62 timings:|0.17888112499713316
+2026-02-04 14:10:23,887|INFO|nn.computeOptunaObjective|Trial 62 objective:|0.564521620701396
+2026-02-04 14:10:24,045|INFO|nn.computeOptunaObjective|Trial 63 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:24,045|INFO|nn.computeOptunaObjective|Trial 63 balacc:|[0.5]
+2026-02-04 14:10:24,045|INFO|nn.computeOptunaObjective|Trial 63 rocauc:|[0.6844853024628306]
+2026-02-04 14:10:24,045|INFO|nn.computeOptunaObjective|Trial 63 timings:|0.15648616700127604
+2026-02-04 14:10:24,045|INFO|nn.computeOptunaObjective|Trial 63 objective:|0.5
+2026-02-04 14:10:24,320|INFO|nn.computeOptunaObjective|Trial 64 params:|{'n_layers': 3, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:24,321|INFO|nn.computeOptunaObjective|Trial 64 balacc:|[0.5796731358529111]
+2026-02-04 14:10:24,321|INFO|nn.computeOptunaObjective|Trial 64 rocauc:|[0.7406650777437295]
+2026-02-04 14:10:24,321|INFO|nn.computeOptunaObjective|Trial 64 timings:|0.2750349580019247
+2026-02-04 14:10:24,321|INFO|nn.computeOptunaObjective|Trial 64 objective:|0.5796731358529111
+2026-02-04 14:10:24,460|INFO|nn.computeOptunaObjective|Trial 65 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:24,460|INFO|nn.computeOptunaObjective|Trial 65 balacc:|[0.5]
+2026-02-04 14:10:24,460|INFO|nn.computeOptunaObjective|Trial 65 rocauc:|[0.7289751447054817]
+2026-02-04 14:10:24,460|INFO|nn.computeOptunaObjective|Trial 65 timings:|0.1382917080009065
+2026-02-04 14:10:24,460|INFO|nn.computeOptunaObjective|Trial 65 objective:|0.5
+2026-02-04 14:10:24,740|INFO|nn.computeOptunaObjective|Trial 66 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:24,740|INFO|nn.computeOptunaObjective|Trial 66 balacc:|[0.5738849165815458]
+2026-02-04 14:10:24,740|INFO|nn.computeOptunaObjective|Trial 66 rocauc:|[0.7452048575644081]
+2026-02-04 14:10:24,740|INFO|nn.computeOptunaObjective|Trial 66 timings:|0.27952374999949825
+2026-02-04 14:10:24,740|INFO|nn.computeOptunaObjective|Trial 66 objective:|0.5738849165815458
+2026-02-04 14:10:24,922|INFO|nn.computeOptunaObjective|Trial 67 params:|{'n_layers': 4, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:24,922|INFO|nn.computeOptunaObjective|Trial 67 balacc:|[0.5815457950289411]
+2026-02-04 14:10:24,922|INFO|nn.computeOptunaObjective|Trial 67 rocauc:|[0.7446941323345817]
+2026-02-04 14:10:24,922|INFO|nn.computeOptunaObjective|Trial 67 timings:|0.18096129200057476
+2026-02-04 14:10:24,922|INFO|nn.computeOptunaObjective|Trial 67 objective:|0.5815457950289411
+2026-02-04 14:10:25,148|INFO|nn.computeOptunaObjective|Trial 68 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:25,148|INFO|nn.computeOptunaObjective|Trial 68 balacc:|[0.562648961525366]
+2026-02-04 14:10:25,148|INFO|nn.computeOptunaObjective|Trial 68 rocauc:|[0.7185336511179208]
+2026-02-04 14:10:25,148|INFO|nn.computeOptunaObjective|Trial 68 timings:|0.22527358300067135
+2026-02-04 14:10:25,148|INFO|nn.computeOptunaObjective|Trial 68 objective:|0.562648961525366
+2026-02-04 14:10:25,548|INFO|nn.computeOptunaObjective|Trial 69 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:25,548|INFO|nn.computeOptunaObjective|Trial 69 balacc:|[0.5796731358529111]
+2026-02-04 14:10:25,549|INFO|nn.computeOptunaObjective|Trial 69 rocauc:|[0.7486096924299172]
+2026-02-04 14:10:25,549|INFO|nn.computeOptunaObjective|Trial 69 timings:|0.39928212499944493
+2026-02-04 14:10:25,549|INFO|nn.computeOptunaObjective|Trial 69 objective:|0.5796731358529111
+2026-02-04 14:10:25,726|INFO|nn.computeOptunaObjective|Trial 70 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:25,726|INFO|nn.computeOptunaObjective|Trial 70 balacc:|[0.564521620701396]
+2026-02-04 14:10:25,726|INFO|nn.computeOptunaObjective|Trial 70 rocauc:|[0.7444103960957893]
+2026-02-04 14:10:25,726|INFO|nn.computeOptunaObjective|Trial 70 timings:|0.17667804099983186
+2026-02-04 14:10:25,726|INFO|nn.computeOptunaObjective|Trial 70 objective:|0.564521620701396
+2026-02-04 14:10:25,950|INFO|nn.computeOptunaObjective|Trial 71 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:25,950|INFO|nn.computeOptunaObjective|Trial 71 balacc:|[0.564521620701396]
+2026-02-04 14:10:25,950|INFO|nn.computeOptunaObjective|Trial 71 rocauc:|[0.7322664850754738]
+2026-02-04 14:10:25,950|INFO|nn.computeOptunaObjective|Trial 71 timings:|0.22334650000266265
+2026-02-04 14:10:25,950|INFO|nn.computeOptunaObjective|Trial 71 objective:|0.564521620701396
+2026-02-04 14:10:26,132|INFO|nn.computeOptunaObjective|Trial 72 params:|{'n_layers': 2, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:26,133|INFO|nn.computeOptunaObjective|Trial 72 balacc:|[0.564521620701396]
+2026-02-04 14:10:26,133|INFO|nn.computeOptunaObjective|Trial 72 rocauc:|[0.7385086823289071]
+2026-02-04 14:10:26,133|INFO|nn.computeOptunaObjective|Trial 72 timings:|0.18120387499948265
+2026-02-04 14:10:26,133|INFO|nn.computeOptunaObjective|Trial 72 objective:|0.564521620701396
+2026-02-04 14:10:26,420|INFO|nn.computeOptunaObjective|Trial 73 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:26,420|INFO|nn.computeOptunaObjective|Trial 73 balacc:|[0.5]
+2026-02-04 14:10:26,420|INFO|nn.computeOptunaObjective|Trial 73 rocauc:|[0.7470207694926796]
+2026-02-04 14:10:26,420|INFO|nn.computeOptunaObjective|Trial 73 timings:|0.2869299169979058
+2026-02-04 14:10:26,420|INFO|nn.computeOptunaObjective|Trial 73 objective:|0.5
+2026-02-04 14:10:26,553|INFO|nn.computeOptunaObjective|Trial 74 params:|{'n_layers': 2, 'architecture': 'outer', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:26,553|INFO|nn.computeOptunaObjective|Trial 74 balacc:|[0.564521620701396]
+2026-02-04 14:10:26,553|INFO|nn.computeOptunaObjective|Trial 74 rocauc:|[0.7399841107706278]
+2026-02-04 14:10:26,553|INFO|nn.computeOptunaObjective|Trial 74 timings:|0.13200816699827556
+2026-02-04 14:10:26,553|INFO|nn.computeOptunaObjective|Trial 74 objective:|0.564521620701396
+2026-02-04 14:10:26,824|INFO|nn.computeOptunaObjective|Trial 75 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:26,825|INFO|nn.computeOptunaObjective|Trial 75 balacc:|[0.5151515151515151]
+2026-02-04 14:10:26,825|INFO|nn.computeOptunaObjective|Trial 75 rocauc:|[0.7464532970150949]
+2026-02-04 14:10:26,825|INFO|nn.computeOptunaObjective|Trial 75 timings:|0.2700696669999161
+2026-02-04 14:10:26,825|INFO|nn.computeOptunaObjective|Trial 75 objective:|0.5151515151515151
+2026-02-04 14:10:27,004|INFO|nn.computeOptunaObjective|Trial 76 params:|{'n_layers': 2, 'architecture': 'inner', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:27,004|INFO|nn.computeOptunaObjective|Trial 76 balacc:|[0.5151515151515151]
+2026-02-04 14:10:27,004|INFO|nn.computeOptunaObjective|Trial 76 rocauc:|[0.7453183520599251]
+2026-02-04 14:10:27,004|INFO|nn.computeOptunaObjective|Trial 76 timings:|0.17875712499881047
+2026-02-04 14:10:27,004|INFO|nn.computeOptunaObjective|Trial 76 objective:|0.5151515151515151
+2026-02-04 14:10:27,222|INFO|nn.computeOptunaObjective|Trial 77 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 150}
+2026-02-04 14:10:27,222|INFO|nn.computeOptunaObjective|Trial 77 balacc:|[0.5151515151515151]
+2026-02-04 14:10:27,222|INFO|nn.computeOptunaObjective|Trial 77 rocauc:|[0.7459993190330269]
+2026-02-04 14:10:27,222|INFO|nn.computeOptunaObjective|Trial 77 timings:|0.2164721670014842
+2026-02-04 14:10:27,222|INFO|nn.computeOptunaObjective|Trial 77 objective:|0.5151515151515151
+2026-02-04 14:10:27,489|INFO|nn.computeOptunaObjective|Trial 78 params:|{'n_layers': 4, 'architecture': 'linear', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:27,489|INFO|nn.computeOptunaObjective|Trial 78 balacc:|[0.564521620701396]
+2026-02-04 14:10:27,489|INFO|nn.computeOptunaObjective|Trial 78 rocauc:|[0.7406083304959711]
+2026-02-04 14:10:27,489|INFO|nn.computeOptunaObjective|Trial 78 timings:|0.2659235409992107
+2026-02-04 14:10:27,489|INFO|nn.computeOptunaObjective|Trial 78 objective:|0.564521620701396
+2026-02-04 14:10:27,618|INFO|nn.computeOptunaObjective|Trial 79 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:27,618|INFO|nn.computeOptunaObjective|Trial 79 balacc:|[0.562648961525366]
+2026-02-04 14:10:27,618|INFO|nn.computeOptunaObjective|Trial 79 rocauc:|[0.7337419135171944]
+2026-02-04 14:10:27,618|INFO|nn.computeOptunaObjective|Trial 79 timings:|0.128085333002673
+2026-02-04 14:10:27,618|INFO|nn.computeOptunaObjective|Trial 79 objective:|0.562648961525366
+2026-02-04 14:10:27,861|INFO|nn.computeOptunaObjective|Trial 80 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:27,861|INFO|nn.computeOptunaObjective|Trial 80 balacc:|[0.562648961525366]
+2026-02-04 14:10:27,861|INFO|nn.computeOptunaObjective|Trial 80 rocauc:|[0.7188741346044716]
+2026-02-04 14:10:27,861|INFO|nn.computeOptunaObjective|Trial 80 timings:|0.24203783299890347
+2026-02-04 14:10:27,861|INFO|nn.computeOptunaObjective|Trial 80 objective:|0.562648961525366
+2026-02-04 14:10:28,015|INFO|nn.computeOptunaObjective|Trial 81 params:|{'n_layers': 3, 'architecture': 'linear', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:28,015|INFO|nn.computeOptunaObjective|Trial 81 balacc:|[0.5]
+2026-02-04 14:10:28,015|INFO|nn.computeOptunaObjective|Trial 81 rocauc:|[0.7634774713426399]
+2026-02-04 14:10:28,015|INFO|nn.computeOptunaObjective|Trial 81 timings:|0.15321516599942697
+2026-02-04 14:10:28,015|INFO|nn.computeOptunaObjective|Trial 81 objective:|0.5
+2026-02-04 14:10:28,415|INFO|nn.computeOptunaObjective|Trial 82 params:|{'n_layers': 3, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:28,415|INFO|nn.computeOptunaObjective|Trial 82 balacc:|[0.5738849165815458]
+2026-02-04 14:10:28,415|INFO|nn.computeOptunaObjective|Trial 82 rocauc:|[0.7539439337192146]
+2026-02-04 14:10:28,415|INFO|nn.computeOptunaObjective|Trial 82 timings:|0.3985739999989164
+2026-02-04 14:10:28,415|INFO|nn.computeOptunaObjective|Trial 82 objective:|0.5738849165815458
+2026-02-04 14:10:28,587|INFO|nn.computeOptunaObjective|Trial 83 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:28,587|INFO|nn.computeOptunaObjective|Trial 83 balacc:|[0.5]
+2026-02-04 14:10:28,587|INFO|nn.computeOptunaObjective|Trial 83 rocauc:|[0.7481557144478492]
+2026-02-04 14:10:28,587|INFO|nn.computeOptunaObjective|Trial 83 timings:|0.17158466699765995
+2026-02-04 14:10:28,587|INFO|nn.computeOptunaObjective|Trial 83 objective:|0.5
+2026-02-04 14:10:28,789|INFO|nn.computeOptunaObjective|Trial 84 params:|{'n_layers': 4, 'architecture': 'outer', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:28,789|INFO|nn.computeOptunaObjective|Trial 84 balacc:|[0.5]
+2026-02-04 14:10:28,789|INFO|nn.computeOptunaObjective|Trial 84 rocauc:|[0.7568947906026557]
+2026-02-04 14:10:28,789|INFO|nn.computeOptunaObjective|Trial 84 timings:|0.200865499999054
+2026-02-04 14:10:28,789|INFO|nn.computeOptunaObjective|Trial 84 objective:|0.5
+2026-02-04 14:10:28,964|INFO|nn.computeOptunaObjective|Trial 85 params:|{'n_layers': 3, 'architecture': 'bottom', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:28,964|INFO|nn.computeOptunaObjective|Trial 85 balacc:|[0.562648961525366]
+2026-02-04 14:10:28,964|INFO|nn.computeOptunaObjective|Trial 85 rocauc:|[0.7323799795709909]
+2026-02-04 14:10:28,964|INFO|nn.computeOptunaObjective|Trial 85 timings:|0.17397245900065172
+2026-02-04 14:10:28,964|INFO|nn.computeOptunaObjective|Trial 85 objective:|0.562648961525366
+2026-02-04 14:10:29,113|INFO|nn.computeOptunaObjective|Trial 86 params:|{'n_layers': 2, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 100}
+2026-02-04 14:10:29,113|INFO|nn.computeOptunaObjective|Trial 86 balacc:|[0.5]
+2026-02-04 14:10:29,113|INFO|nn.computeOptunaObjective|Trial 86 rocauc:|[0.6884576098059244]
+2026-02-04 14:10:29,113|INFO|nn.computeOptunaObjective|Trial 86 timings:|0.1472308750016964
+2026-02-04 14:10:29,113|INFO|nn.computeOptunaObjective|Trial 86 objective:|0.5
+2026-02-04 14:10:29,471|INFO|nn.computeOptunaObjective|Trial 87 params:|{'n_layers': 4, 'architecture': 'bottom', 'lr': 0.0001, 'n_epochs': 200}
+2026-02-04 14:10:29,471|INFO|nn.computeOptunaObjective|Trial 87 balacc:|[0.5132788559754852]
+2026-02-04 14:10:29,471|INFO|nn.computeOptunaObjective|Trial 87 rocauc:|[0.7431619566451027]
+2026-02-04 14:10:29,471|INFO|nn.computeOptunaObjective|Trial 87 timings:|0.35707025000010617
+2026-02-04 14:10:29,471|INFO|nn.computeOptunaObjective|Trial 87 objective:|0.5132788559754852
+2026-02-04 14:10:29,774|INFO|nn.computeOptunaObjective|Trial 88 params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 100}
+2026-02-04 14:10:29,774|INFO|nn.computeOptunaObjective|Trial 88 balacc:|[0.566394279877426]
+2026-02-04 14:10:29,774|INFO|nn.computeOptunaObjective|Trial 88 rocauc:|[0.7457155827942344]
+2026-02-04 14:10:29,774|INFO|nn.computeOptunaObjective|Trial 88 timings:|0.30138970900225104
+2026-02-04 14:10:29,774|INFO|nn.computeOptunaObjective|Trial 88 objective:|0.566394279877426
+2026-02-04 14:10:30,040|INFO|nn.computeOptunaObjective|Trial 89 params:|{'n_layers': 2, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 200}
+2026-02-04 14:10:30,040|INFO|nn.computeOptunaObjective|Trial 89 balacc:|[0.5796731358529111]
+2026-02-04 14:10:30,040|INFO|nn.computeOptunaObjective|Trial 89 rocauc:|[0.7430484621495858]
+2026-02-04 14:10:30,040|INFO|nn.computeOptunaObjective|Trial 89 timings:|0.26537399999870104
+2026-02-04 14:10:30,040|INFO|nn.computeOptunaObjective|Trial 89 objective:|0.5796731358529111
+2026-02-04 14:10:30,041|INFO|mtg.runMTGExperiment|Best trial number:|18
+2026-02-04 14:10:30,041|INFO|mtg.runMTGExperiment|Best trial objective:|0.5985699693564862
+2026-02-04 14:10:30,041|INFO|mtg.runMTGExperiment|Best trial params:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 150}
+2026-02-04 14:10:30,054|INFO|nn.loadModellingDataset|Trainval descriptors loaded (features, instances):|1024|1391
+2026-02-04 14:10:30,060|INFO|nn.loadModellingDataset|Trainval endpoints loaded (tasks, instances):|1|1391
+2026-02-04 14:10:30,069|INFO|nn.loadModellingDataset|Test descriptors loaded (features, instances):|1024|134
+2026-02-04 14:10:30,069|INFO|nn.loadModellingDataset|Test endpoints loaded (tasks, instances):|1|134
+2026-02-04 14:10:30,069|INFO|mtg.runMTGExperiment|Final neural network hyperparams:|{'n_layers': 4, 'architecture': 'top', 'lr': 0.001, 'n_epochs': 150, 'best_trial_num': 18}
+2026-02-04 14:10:30,651|INFO|nn.testFinalModel|Final model test balacc:|[0.6959677419354839]
+2026-02-04 14:10:30,652|INFO|nn.testFinalModel|Final model test rocauc:|[0.7358870967741935]
+2026-02-04 14:10:30,668|INFO|mtg.runMTGExperiment|Mechanistic task grouping experiment timing:|23.958642749999854
+2026-02-04 14:10:30,669|INFO|mtg.runMTGExperiment|DONE

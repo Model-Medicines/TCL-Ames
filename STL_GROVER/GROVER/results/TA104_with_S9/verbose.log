@@ -1,0 +1,556 @@
+Fold 0
+Loading data
+Number of tasks = 1
+Splitting data with seed 42
+Class sizes
+ames_mutagenicity 0: 71.27%, 1: 28.73%
+Total size = 268 | train size = 214 | val size = 54 | test size = 19
+Loading model 0 from /home/ubuntu/Desktop/STL_GROVER/GROVER/pretrained_models/grover_large.pt
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.layernorm.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.layernorm.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.W_i.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.0.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.0.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.1.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.1.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.2.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.2.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.output_linear.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.W_o.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.layernorm.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.layernorm.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.W_i.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.0.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.0.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.1.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.1.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.2.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.2.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.output_linear.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.W_o.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.act_func.weight".
+Loading pretrained parameter "grover.encoders.atom_from_atom_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.atom_from_atom_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.atom_from_bond_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.atom_from_bond_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.bond_from_atom_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.bond_from_atom_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.bond_from_bond_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.bond_from_bond_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.act_func_node.weight".
+Loading pretrained parameter "grover.encoders.act_func_edge.weight".
+GroverFinetuneTask(
+  (grover): GROVEREmbedding(
+    (encoders): GTransEncoder(
+      (edge_blocks): ModuleList(
+        (0): MTBlock(
+          (heads): ModuleList(
+            (0): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (1): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (2): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (3): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+          )
+          (act_func): PReLU(num_parameters=1)
+          (dropout_layer): Dropout(p=0.1, inplace=False)
+          (layernorm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+          (W_i): Linear(in_features=165, out_features=1200, bias=False)
+          (attn): MultiHeadedAttention(
+            (linear_layers): ModuleList(
+              (0): Linear(in_features=1200, out_features=1200, bias=True)
+              (1): Linear(in_features=1200, out_features=1200, bias=True)
+              (2): Linear(in_features=1200, out_features=1200, bias=True)
+            )
+            (output_linear): Linear(in_features=1200, out_features=1200, bias=False)
+            (attention): Attention()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (W_o): Linear(in_features=4800, out_features=1200, bias=False)
+          (sublayer): SublayerConnection(
+            (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+      (node_blocks): ModuleList(
+        (0): MTBlock(
+          (heads): ModuleList(
+            (0): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (1): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (2): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+            (3): Head(
+              (mpn_q): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_k): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+              (mpn_v): MPNEncoder(
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+                (act_func): PReLU(num_parameters=1)
+                (W_h): Linear(in_features=1200, out_features=1200, bias=False)
+              )
+            )
+          )
+          (act_func): PReLU(num_parameters=1)
+          (dropout_layer): Dropout(p=0.1, inplace=False)
+          (layernorm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+          (W_i): Linear(in_features=151, out_features=1200, bias=False)
+          (attn): MultiHeadedAttention(
+            (linear_layers): ModuleList(
+              (0): Linear(in_features=1200, out_features=1200, bias=True)
+              (1): Linear(in_features=1200, out_features=1200, bias=True)
+              (2): Linear(in_features=1200, out_features=1200, bias=True)
+            )
+            (output_linear): Linear(in_features=1200, out_features=1200, bias=False)
+            (attention): Attention()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (W_o): Linear(in_features=4800, out_features=1200, bias=False)
+          (sublayer): SublayerConnection(
+            (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+      (ffn_atom_from_atom): PositionwiseFeedForward(
+        (W_1): Linear(in_features=1351, out_features=4800, bias=True)
+        (W_2): Linear(in_features=4800, out_features=1200, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (act_func): PReLU(num_parameters=1)
+      )
+      (ffn_atom_from_bond): PositionwiseFeedForward(
+        (W_1): Linear(in_features=1351, out_features=4800, bias=True)
+        (W_2): Linear(in_features=4800, out_features=1200, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (act_func): PReLU(num_parameters=1)
+      )
+      (ffn_bond_from_atom): PositionwiseFeedForward(
+        (W_1): Linear(in_features=1365, out_features=4800, bias=True)
+        (W_2): Linear(in_features=4800, out_features=1200, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (act_func): PReLU(num_parameters=1)
+      )
+      (ffn_bond_from_bond): PositionwiseFeedForward(
+        (W_1): Linear(in_features=1365, out_features=4800, bias=True)
+        (W_2): Linear(in_features=4800, out_features=1200, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (act_func): PReLU(num_parameters=1)
+      )
+      (atom_from_atom_sublayer): SublayerConnection(
+        (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (atom_from_bond_sublayer): SublayerConnection(
+        (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (bond_from_atom_sublayer): SublayerConnection(
+        (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (bond_from_bond_sublayer): SublayerConnection(
+        (norm): LayerNorm((1200,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (act_func_node): PReLU(num_parameters=1)
+      (act_func_edge): PReLU(num_parameters=1)
+      (dropout_layer): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (readout): Readout()
+  (mol_atom_from_atom_ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=1200, out_features=300, bias=True)
+    (2): PReLU(num_parameters=1)
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+  (mol_atom_from_bond_ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=1200, out_features=300, bias=True)
+    (2): PReLU(num_parameters=1)
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+  (sigmoid): Sigmoid()
+)
+Number of parameters = 107,864,436
+Moving model to cuda
+Validation ames_mutagenicity auc = 0.547009
+Validation ames_mutagenicity auc = 0.649573
+Validation ames_mutagenicity auc = 0.700855
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.699145
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.728205
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.733333
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.719658
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.731624
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.731624
+Validation ames_mutagenicity auc = 0.731624
+Validation ames_mutagenicity auc = 0.731624
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.719658
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.717949
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.717949
+Validation ames_mutagenicity auc = 0.719658
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.717949
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.724786
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.723077
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.721368
+Validation ames_mutagenicity auc = 0.729915
+Validation ames_mutagenicity auc = 0.728205
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.729915
+Validation ames_mutagenicity auc = 0.729915
+Validation ames_mutagenicity auc = 0.729915
+Validation ames_mutagenicity auc = 0.726496
+Validation ames_mutagenicity auc = 0.724786
+Model 0 best val loss = 0.695606 on epoch 48
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.0.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.1.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.2.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.heads.3.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.act_func.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.layernorm.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.layernorm.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.W_i.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.0.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.0.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.1.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.1.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.2.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.linear_layers.2.bias".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.attn.output_linear.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.W_o.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.edge_blocks.0.sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.0.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.1.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.2.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_q.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_q.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_k.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_k.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_v.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.heads.3.mpn_v.W_h.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.act_func.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.layernorm.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.layernorm.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.W_i.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.0.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.0.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.1.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.1.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.2.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.linear_layers.2.bias".
+Loading pretrained parameter "grover.encoders.node_blocks.0.attn.output_linear.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.W_o.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.node_blocks.0.sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_atom.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_atom_from_bond.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_atom.act_func.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_1.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_1.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_2.weight".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.W_2.bias".
+Loading pretrained parameter "grover.encoders.ffn_bond_from_bond.act_func.weight".
+Loading pretrained parameter "grover.encoders.atom_from_atom_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.atom_from_atom_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.atom_from_bond_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.atom_from_bond_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.bond_from_atom_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.bond_from_atom_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.bond_from_bond_sublayer.norm.weight".
+Loading pretrained parameter "grover.encoders.bond_from_bond_sublayer.norm.bias".
+Loading pretrained parameter "grover.encoders.act_func_node.weight".
+Loading pretrained parameter "grover.encoders.act_func_edge.weight".
+Loading pretrained parameter "readout.cached_zero_vector".
+Loading pretrained parameter "mol_atom_from_atom_ffn.1.weight".
+Loading pretrained parameter "mol_atom_from_atom_ffn.1.bias".
+Loading pretrained parameter "mol_atom_from_atom_ffn.2.weight".
+Loading pretrained parameter "mol_atom_from_atom_ffn.4.weight".
+Loading pretrained parameter "mol_atom_from_atom_ffn.4.bias".
+Loading pretrained parameter "mol_atom_from_bond_ffn.1.weight".
+Loading pretrained parameter "mol_atom_from_bond_ffn.1.bias".
+Loading pretrained parameter "mol_atom_from_bond_ffn.2.weight".
+Loading pretrained parameter "mol_atom_from_bond_ffn.4.weight".
+Loading pretrained parameter "mol_atom_from_bond_ffn.4.bias".
+Moving model to cuda
+Model 0 test auc = 0.833333
+Model 0 test ames_mutagenicity auc = 0.833333
+Ensemble test auc = 0.833333
+Ensemble test ames_mutagenicity auc = 0.833333
+1-fold cross validation
+Seed 42 ==> test auc = 0.833333
+Seed 42 ==> test ames_mutagenicity auc = 0.833333
+overall_random_test_auc=0.833333
+std=0.000000
+Overall test ames_mutagenicity auc = 0.833333 +/- 0.000000

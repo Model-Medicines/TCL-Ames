@@ -1,0 +1,7 @@
+# gmtames reproduction requirements
+numpy
+pandas
+torch
+scikit-learn
+optuna
+matplotlib

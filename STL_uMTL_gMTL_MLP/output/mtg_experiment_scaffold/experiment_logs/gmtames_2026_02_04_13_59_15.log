@@ -1,0 +1,36 @@
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|>>>> START LOGGING A GMTAMES EXPERIMENT
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|mode:|mtg
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|tasks:|TA100,TA100_S9,TA102,TA102_S9,TA104,TA104_S9,TA1535,TA1535_S9
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|testsplit:|scaffold
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|output:|mtg_experiment_scaffold
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|device:|mps
+2026-02-04 13:59:16,415|INFO|__main__.startLogging|DONE
+2026-02-04 13:59:16,415|INFO|mtg.runMTGExperiment|>>>> RUNNING MECHANISTIC TASK GROUPING EXPERIMENT
+2026-02-04 13:59:16,418|ERROR|__main__.<module>|[Errno 2] No such file or directory: '/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/data/base_datasets/scaffold/gmtamesQSAR_TA100_train.csv'
+Traceback (most recent call last):
+  File "/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/__main__.py", line 105, in <module>
+    main()
+  File "/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/__main__.py", line 92, in main
+    runMTGExperiment(args.tasks, args.testsplit, path_to_output, args.device)
+  File "/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/mtg.py", line 39, in runMTGExperiment
+    modelling_datasets, tasks = generateModellingDatasets(args_tasks, testsplit)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/data.py", line 86, in generateModellingDatasets
+    modelling_datasets[t] = pd.concat([pd.read_csv(PATH_TO_BASE_DATASETS / testsplit / ('gmtamesQSAR_' + strain + '_' + t + '.csv')) for strain in task_list])
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerumansky/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerumansky/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerumansky/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tylerumansky/miniconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/tylerumansky/miniconda3/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/tylerumansky/Desktop/UoS Ames Models/gmtames_reproduction_filtered_data_2/gmtames/data/base_datasets/scaffold/gmtamesQSAR_TA100_train.csv'

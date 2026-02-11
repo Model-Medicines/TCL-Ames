@@ -1,0 +1,12 @@
+Fold 0
+Model 0 best val loss = 0.660832 on epoch 65
+Model 0 test auc = 0.884951
+Model 0 test ames_mutagenicity auc = 0.884951
+Ensemble test auc = 0.884951
+Ensemble test ames_mutagenicity auc = 0.884951
+1-fold cross validation
+Seed 42 ==> test auc = 0.884951
+Seed 42 ==> test ames_mutagenicity auc = 0.884951
+overall_random_test_auc=0.884951
+std=0.000000
+Overall test ames_mutagenicity auc = 0.884951 +/- 0.000000
