@@ -70,14 +70,14 @@ if __name__ == "__main__":
 
     print("Processing train/val data...")
     train_features = process_split(
-        os.path.join(DATA_DIR, "train_val_ood_fixed_df.csv"),
+        os.path.join(DATA_DIR, "train_val_ood_master_df.csv"),
         "train_val.csv",
         "train_val_features.npz",
     )
 
     print("\nProcessing test data...")
     test_features = process_split(
-        os.path.join(DATA_DIR, "test_ood_fixed_df.csv"),
+        os.path.join(DATA_DIR, "test_ood_master_df.csv"),
         "test.csv",
         "test_features.npz",
     )

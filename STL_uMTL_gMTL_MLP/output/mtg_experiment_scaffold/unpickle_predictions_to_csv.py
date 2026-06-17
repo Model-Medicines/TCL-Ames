@@ -4,6 +4,8 @@ Model name (STL, uMTL, gMTL) is inferred from task count, matching gmtames/resul
 Each pickle has: gmtamesqsar_id, y_true, y_pred (task columns).
 For gMTL, one row per (sample, task) is kept by best-performing grouping (same as results.py).
 """
+from __future__ import annotations
+
 import pickle
 from pathlib import Path
 
@@ -38,15 +40,30 @@ def task_display(internal: str) -> str:
     return internal + '_without_S9'
 
 
+def load_smiles_lookup(base: Path) -> pd.Series:
+    """Load a lookup of gmtamesQSAR_ID -> SMILES."""
+    smiles_path = (
+        base.parent.parent
+        / 'gmtames'
+        / 'data'
+        / 'smiles_to_fp'
+        / 'gmtamesQSAR_endpoints_scaffold_with_smiles.csv'
+    )
+    smiles_df = pd.read_csv(smiles_path, usecols=['gmtamesQSAR_ID', 'SMILES'])
+    smiles_df['gmtamesQSAR_ID'] = smiles_df['gmtamesQSAR_ID'].astype(str)
+    smiles_df = smiles_df.drop_duplicates(subset='gmtamesQSAR_ID', keep='first')
+    return smiles_df.set_index('gmtamesQSAR_ID')['SMILES']
+
+
 def wide_to_long(df_wide: pd.DataFrame, task_list: list[str], grouping_id: str | None = None) -> pd.DataFrame:
     """Convert wide-format predictions to long format: Task, Ground Truth, Binary Prediction. Drops rows with Ground Truth == -2 (missing). Optionally add grouping_id for gMTL. Task column uses display form (e.g. TA97_with_S9, TA97_without_S9)."""
     long_parts = []
     for task in task_list:
-        part = df_wide[['gmtamesqsar_id', f'{task}_y_true', f'{task}_y_pred']].copy()
+        part = df_wide[['gmtamesqsar_id', 'SMILES', f'{task}_y_true', f'{task}_y_pred']].copy()
         part = part.rename(columns={f'{task}_y_true': 'Ground Truth', f'{task}_y_pred': 'y_pred'})
         part['Task'] = task_display(task)
         part['Binary Prediction'] = np.rint(part['y_pred']).astype(int)
-        part = part[['gmtamesqsar_id', 'Task', 'Ground Truth', 'Binary Prediction']]
+        part = part[['gmtamesqsar_id', 'SMILES', 'Task', 'Ground Truth', 'Binary Prediction']]
         part = part[part['Ground Truth'] != -2]
         if grouping_id is not None:
             part['grouping'] = grouping_id
@@ -95,7 +112,7 @@ def gmtl_keep_best_grouping_per_task(combined: pd.DataFrame) -> pd.DataFrame:
     return combined
 
 
-def pkl_to_csv(pkl_path: Path, out_dir: Path, long_per_model: dict[str, list[pd.DataFrame]]) -> None:
+def pkl_to_csv(pkl_path: Path, out_dir: Path, long_per_model: dict[str, list[pd.DataFrame]], smiles_lookup: pd.Series) -> None:
     with open(pkl_path, 'rb') as f:
         data = pickle.load(f)
 
@@ -118,6 +135,8 @@ def pkl_to_csv(pkl_path: Path, out_dir: Path, long_per_model: dict[str, list[pd.
             row[f'{task}_y_pred'] = y_pred[j, k] if y_pred.ndim > 1 else y_pred[j]
         rows.append(row)
     df = pd.DataFrame(rows)
+    df['gmtamesqsar_id'] = df['gmtamesqsar_id'].astype(str)
+    df['SMILES'] = df['gmtamesqsar_id'].map(smiles_lookup)
     out_path = sub_dir / fname.replace('.pkl', '.csv')
     df.to_csv(out_path, index=False)
     print(f"{model_name}/{out_path.name}")
@@ -132,10 +151,11 @@ def main():
     pkl_dir = base / 'test_predictions'
     out_dir = base / 'test_predictions_csv'
     out_dir.mkdir(exist_ok=True)
+    smiles_lookup = load_smiles_lookup(base)
 
     long_per_model = {'STL': [], 'uMTL': [], 'gMTL': []}
     for pkl_path in sorted(pkl_dir.glob('*_test_predictions.pkl')):
-        pkl_to_csv(pkl_path, out_dir, long_per_model)
+        pkl_to_csv(pkl_path, out_dir, long_per_model, smiles_lookup)
 
     # One summary CSV per model: Task, Ground Truth, Binary Prediction (one row per (sample, task))
     for model_name, dfs in long_per_model.items():
@@ -150,9 +170,10 @@ def main():
             combined = combined.drop_duplicates(subset=['gmtamesqsar_id', 'Task'], keep='first')
             if 'grouping' in combined.columns:
                 combined = combined.drop(columns=['grouping'])
-        summary_path = out_dir / model_name / 'predictions.csv'
+        summary_filename = f'{model_name}_NN_predictions.csv'
+        summary_path = out_dir / model_name / summary_filename
         combined.to_csv(summary_path, index=False)
-        print(f"{model_name}/predictions.csv ({len(combined)} rows)")
+        print(f"{model_name}/{summary_filename} ({len(combined)} rows)")
 
 
 if __name__ == '__main__':

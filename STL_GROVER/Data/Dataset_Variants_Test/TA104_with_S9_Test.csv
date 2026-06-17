@@ -14,7 +14,6 @@ gmtamesQSAR_6852,CC(C)=CC1C(C(=O)OCc2coc(Cc3ccccc3)c2)C1(C)C,TA104,1,Negative
 gmtamesQSAR_7211,O=C1C=CC(=O)C(c2ccccc2)=C1,TA104,1,Negative
 gmtamesQSAR_7229,O=C1CC(=Nc2ccccc2)C(=O)c2ccccc21,TA104,1,Positive
 gmtamesQSAR_7256,C/C=C/c1cc2c(c(=O)o1)C(=O)C(O)C(C)O2,TA104,1,Negative
-gmtamesQSAR_7582,O=c1[nH]c(=O)n([C@@H]2C[C@H](O)[C@@H](CO)O2)cc1CCCl,TA104,1,Negative
 gmtamesQSAR_7649,C1=Cc2c3ccc4cccc5ccc(c6cccc1c26)c3c45,TA104,1,Positive
 gmtamesQSAR_7803,O=C1CCCCCCCCCCCC(=O)OCCO1,TA104,1,Negative
 gmtamesQSAR_8077,O=[N+]([O-])c1ccc2c(c1)CCc1cc3c(cc1-2)CCCC3,TA104,1,Positive

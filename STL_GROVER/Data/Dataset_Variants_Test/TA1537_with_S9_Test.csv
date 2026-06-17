@@ -24,7 +24,6 @@ gmtamesQSAR_3879,CCON=C(CC)C1C(=O)CC(c2c(C)cc(C)cc2C)CC1=O,TA1537,1,Negative
 gmtamesQSAR_3888,CC1(C(=O)Nc2ccc(O)c(Cl)c2Cl)CCCCC1,TA1537,1,Negative
 gmtamesQSAR_3892,CC1=NC(=N)C(C(=O)OC2CN(C(c3ccccc3)c3ccccc3)C2)C(c2cccc([N+](=O)[O-])c2)C1C(=O)OC(C)C,TA1537,1,Negative
 gmtamesQSAR_3911,CC1(C)Nc2nc(=O)[nH]c(=O)n2C1O,TA1537,1,Negative
-gmtamesQSAR_3921,C=C1CC23CC1(O)CCC2C12C=CC(O)C(C)(C(=O)O1)C2C3C(=O)O,TA1537,1,Negative
 gmtamesQSAR_3923,C1CSCCS1,TA1537,1,Negative
 gmtamesQSAR_3928,ClC1=C(Cl)C2(Cl)C3C4OC4C(Cl)C3C1(Cl)C2(Cl)Cl,TA1537,1,Negative
 gmtamesQSAR_3944,CCCCc1c(C)[nH]c(NCC)nc1=O,TA1537,1,Negative
@@ -33,7 +32,6 @@ gmtamesQSAR_4018,C[C@]12CC[C@H](OC(=O)/C=C/c3cccc(N(CCCl)CCCl)c3)CC1=CC[C@@H]1[C
 gmtamesQSAR_4039,C[C@]12CC[C@H](O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)NC(=O)CC[C@@H]12,TA1537,1,Negative
 gmtamesQSAR_4040,Nc1nc(N)nc(-c2ccccc2)n1,TA1537,1,Negative
 gmtamesQSAR_4058,CCO[C@@H]1[C@@H](OC)[C@H](C)O[C@@H](O[C@@H]2C[C@H]3CC[C@@H]4C(=CC5C(=O)C(C)[C@@H](OC6CC[C@H](NC)[C@@H](C)O6)CCC[C@H](CC)OC(=O)C[C@H]54)[C@@H]3C2)[C@@H]1OC,TA1537,1,Negative
-gmtamesQSAR_4063,CC1=c2c(C)c(O)c(C(=O)O)c(O)c2=CO[C@@H]1C,TA1537,1,Negative
 gmtamesQSAR_4070,NC(=O)c1cc[n+](COCN2C=CC=CC2=C=[NH+]O)cc1,TA1537,1,Negative
 gmtamesQSAR_4076,O=c1n(CC2CO2)c(=O)n(CC2CO2)c(=O)n1CC1CO1,TA1537,1,Negative
 gmtamesQSAR_4089,COC1=CC=CC=CC1,TA1537,1,Negative
@@ -41,8 +39,6 @@ gmtamesQSAR_4109,CCCCCCC(O)C1C2=C(CC(C(O)C3CC=CC(=O)O3)CC3=C(C(=O)OC3=O)C1O)C(=O
 gmtamesQSAR_4110,CC1(C)[C@@H](O[C@H]2OC(C(=O)O)[C@@H](O)[C@H](O)[C@H]2O[C@@H]2OC(C(=O)O)[C@@H](O)[C@H](O)[C@H]2O)CC[C@]2(C)C3C(=O)C=C4C5C[C@@](C)(C(=O)O)CC[C@]5(C)CC[C@@]4(C)[C@]3(C)CC[C@@H]12,TA1537,1,Negative
 gmtamesQSAR_4133,Brc1cc(Br)c(OCCOc2c(Br)cc(Br)cc2Br)c(Br)c1,TA1537,1,Negative
 gmtamesQSAR_4139,COc1ccc(C(=O)Nc2ccccc2)cc1N=Nc1c(O)c(C(=O)Nc2ccc3[nH]c(=O)[nH]c3c2)cc2ccccc12,TA1537,1,Negative
-gmtamesQSAR_4203,C=C(C)C12OC3(c4ccccc4)OC1C1C4OC4(CO)C(O)C4(O)C(=O)C(C)=CC4C1(O3)C(C)C2OC(=O)C=CC=Cc1ccccc1,TA1537,1,Negative
-gmtamesQSAR_4204,[O-][S+]1OCC2C(CO1)C1(Cl)C(Cl)=C(Cl)C2(Cl)C1(Cl)Cl,TA1537,1,Negative
 gmtamesQSAR_4232,Cc1c(C(=O)O)ccc(S(C)(=O)=O)c1C1=NOCC1,TA1537,1,Negative
 gmtamesQSAR_4239,COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1,TA1537,1,Negative
 gmtamesQSAR_4269,CCN(CC)CCCN(c1ccccc1)C1Cc2ccccc2C1,TA1537,1,Negative
@@ -96,7 +92,6 @@ gmtamesQSAR_4877,CCOC(=O)C1(CCCCCCOCc2cccs2)CO1,TA1537,1,Negative
 gmtamesQSAR_4901,S=c1[nH]cnc2[nH]cnc12,TA1537,1,Negative
 gmtamesQSAR_4905,CC1(C)CON(Cc2ccccc2Cl)C1=O,TA1537,1,Negative
 gmtamesQSAR_4929,N#Cc1ccc(CC(=NNC(=O)Nc2ccc(OC(F)(F)F)cc2)c2cccc(C(F)(F)F)c2)cc1,TA1537,1,Negative
-gmtamesQSAR_4931,CC=C1CC(C)C(O)(CO)C(=O)OCC2=CCN3CCC(OC1=O)C23,TA1537,1,Positive
 gmtamesQSAR_4932,CCN(Cc1ccccc1)c1ccccc1,TA1537,1,Negative
 gmtamesQSAR_4959,CC1CCc2c(N3CCC(O)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23,TA1537,1,Negative
 gmtamesQSAR_4996,CC(C)(C)C(=O)C(Oc1ccc(Cl)cc1)n1ccnc1,TA1537,1,Negative
@@ -115,7 +110,6 @@ gmtamesQSAR_5169,C[C@H]1CCCC(=O)CCCCCc2cc(O)cc(O)c2C(=O)O1,TA1537,1,Negative
 gmtamesQSAR_5173,CCN1CCN(C(=O)NC(C(=O)NC2C(=O)N3C(C([O])=O)C(C)(C)S[C@@H]23)c2ccccc2)C(=O)C1=O,TA1537,1,Negative
 gmtamesQSAR_5178,O=c1c(O)cc2c(O)oc3c(=O)c(O)cc4c(O)oc1c2c43,TA1537,1,Negative
 gmtamesQSAR_5180,O=C(Nc1ccccc1-c1cc(F)c(F)c(F)c1)c1cn(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)nc1C(F)F,TA1537,1,Negative
-gmtamesQSAR_5182,Cn1c(-c2ccccc2)c(/N=N/c2scc[n+]2C)c2ccccc21,TA1537,1,Positive
 gmtamesQSAR_5204,O=C(O)CC(CC(=O)O)C1CCCS(=O)(=O)C1,TA1537,1,Negative
 gmtamesQSAR_5210,CN(C(=O)CN(CCO)CC(=O)N(C)C(C)(C)Cc1ccccc1)C(C)(C)Cc1ccccc1,TA1537,1,Negative
 gmtamesQSAR_5213,C1=Cc2c3ccccc3cc3cccc1c23,TA1537,1,Positive
@@ -129,12 +123,10 @@ gmtamesQSAR_5348,CC(CNC(=O)c1cccnc1)NC(=O)c1cccnc1,TA1537,1,Negative
 gmtamesQSAR_5359,CC1(S(=O)(=O)O)CC(=O)c2ccccc2C1=O,TA1537,1,Negative
 gmtamesQSAR_5412,CN1C(=O)CCC1c1ccc[n+]([O-])c1,TA1537,1,Negative
 gmtamesQSAR_5418,O=C(NCc1ncc(C(F)(F)F)cc1Cl)c1c(Cl)cccc1Cl,TA1537,1,Negative
-gmtamesQSAR_5441,C[C@@H]1[C@H](O)[C@@H](C)/C=C\C=C/C=CC=CC=CC=CC=C[C@H](O[C@@H]2O[C@H](C)[C@@H](O)[C@H](N)[C@@H]2O)C[C@@H]2O[C@](O)(C[C@@H](O)C[C@@H](O)[C@H](O)CC[C@@H](O)C[C@@H](O)CC(=O)O[C@H]1C)C[C@H](O)C2C(=O)O,TA1537,1,Negative
 gmtamesQSAR_5481,[O]S(=O)(=O)c1cc(Nc2nc(Nc3ccccc3)nc(N3CCOCC3)n2)ccc1C=Cc1ccc(Nc2nc(Nc3ccccc3)nc(N3CCOCC3)n2)cc1S([O])(=O)=O,TA1537,1,Negative
 gmtamesQSAR_5484,C=c1c(N)c(O)c2c(c1O)N1C[C@@H]3N[C@@H]3[C@]1(OC)C=2COC(N)=O,TA1537,1,Negative
 gmtamesQSAR_5486,C[N+]1([O-])CCC[C@H]1c1cccnc1,TA1537,1,Negative
 gmtamesQSAR_5495,C1COCCOCCOCCOCCOCCO1,TA1537,1,Negative
-gmtamesQSAR_5498,COC(=O)C1C2CC3c4[nH]c5cc(OC)ccc5c4CCN3CC2CC(OC(=O)C=Cc2cc(OC)c(OC)c(OC)c2)C1OC,TA1537,1,Negative
 gmtamesQSAR_5507,Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1,TA1537,1,Negative
 gmtamesQSAR_5538,C[C@@H]1CC[C@@]2(OC1)O[C@H]1C[C@H]3[C@@H]4CC=C5C[C@@H](O)CC[C@]5(C)[C@H]4CC[C@]3(C)[C@H]1[C@@H]2C,TA1537,1,Negative
 gmtamesQSAR_5553,CC12CCNC(=O)C=C1CCC1C2CCC2(C)C(OC(=O)/C=C/c3cccc(N(CCCl)CCCl)c3)CCC12,TA1537,1,Negative
@@ -145,7 +137,6 @@ gmtamesQSAR_5636,COc1cc(NC(=O)C(=NNc2cc(OC)c(S(=O)(=O)Nc3ccccc3)cc2OC)C(C)=O)c(O
 gmtamesQSAR_5646,COc1cc(N=Nc2cc(S([O])(=O)=O)c3cccc(S(=O)(=O)O)c3c2)c(C)cc1Nc1nc(SCCCS(=O)(=O)O)nc(SCCCS(=O)(=O)O)n1,TA1537,1,Negative
 gmtamesQSAR_5651,CC(=O)O[C@]1(C(C)=O)CC[C@H]2C3=CC(Cl)=C4CC(=O)OC[C@]4(C)[C@H]3CC[C@@]21C,TA1537,1,Negative
 gmtamesQSAR_5652,N=C(N)c1ccc(OCCCCCOc2ccc(C(=N)N)cc2)cc1,TA1537,1,Negative
-gmtamesQSAR_5655,COc1ccc(CCC(=O)c2c(O)cc(OC3OC(CO)C(O)C(O)C3OC3OC(C)C(O)C(O)C3O)cc2O)cc1O,TA1537,1,Negative
 gmtamesQSAR_5657,CNC(=O)c1cccc(NCC(=O)NCCc2ccc(OC)c(OC)c2)c1,TA1537,1,Negative
 gmtamesQSAR_5673,Oc1cc(O)c2cc(O)c(-c3cc(O)c(O)c(O)c3)[o+]c2c1,TA1537,1,Negative
 gmtamesQSAR_5675,CO[C@@]1(NC(=O)CSCC(N)C(=O)O)C(=O)N2C(C(=O)O)=C(CSc3nnnn3C)CS[C@@H]21,TA1537,1,Negative
@@ -154,7 +145,6 @@ gmtamesQSAR_5683,C[C@@]1(c2ccccc2)NC(=O)N(Nc2ccccc2)C1=O,TA1537,1,Negative
 gmtamesQSAR_5688,CCC(C)C1OC2(C=CC1C)CC1CC(C/C=C(/C)C(OC3CC(OC)C(OC4CC(OC)C(O)C(C)O4)C(C)O3)C(C)/C=C\C=C3\COCC4C(O)C(C)=CC(C(=O)O1)C34O)O2,TA1537,1,Negative
 gmtamesQSAR_5689,C[n+]1c2n(c(=O)c3ccccc31)CCc1c-2[nH]c2ccccc12,TA1537,1,Negative
 gmtamesQSAR_5697,C=C(C)C1Cc2c(ccc3c2OC2COc4cc(OC)c(OC)cc4C2C3=O)O1,TA1537,1,Negative
-gmtamesQSAR_5711,CN1CC(C(=O)NC2(C)OC3(O)C4CCCN4C(=O)C(Cc4ccccc4)N3C2=O)C=C2c3cccc4[nH]cc(c34)CC21,TA1537,1,Negative
 gmtamesQSAR_5719,CC(=O)C(=NNc1ccc(C(=O)Nc2ccc(C(N)=O)cc2)cc1)C(=O)Nc1ccc2[nH]c(=O)[nH]c2c1,TA1537,1,Negative
 gmtamesQSAR_5727,COC(=O)c1c(Cl)nn(C)c1S(=O)(=O)NC(=O)Nc1nc(OC)cc(OC)n1,TA1537,1,Negative
 gmtamesQSAR_5731,Nc1c(N=Nc2ccc(S(=O)(=O)CCOS([O])(=O)=O)cc2)c(S([O])(=O)=O)cc2cc(S([O])(=O)=O)c(N=Nc3ccc(S(=O)(=O)CCOS([O])(=O)=O)cc3)c(O)c12,TA1537,1,Negative
@@ -197,7 +187,6 @@ gmtamesQSAR_6409,Cc1ccc(NS(=O)(=O)N(C)C)c(OC2OC(CO)C(O)C(O)C2O)c1,TA1537,1,Negat
 gmtamesQSAR_6411,CCC1(c2ccccc2)C(=O)N=C([O])NC1=O,TA1537,1,Negative
 gmtamesQSAR_6413,CC12CCC(CC1)C(C)(C)O2,TA1537,1,Negative
 gmtamesQSAR_6420,OCC(O)(Cc1ccccc1Cl)C1(Cl)CC1,TA1537,1,Negative
-gmtamesQSAR_6428,C=C1CC/C=C(/C)CC[C@@H]2[C@@H]1CC2(C)C,TA1537,1,Negative
 gmtamesQSAR_6430,CN(C)C(=O)c1nc(CNC(=O)CN)n(-c2ccc(Cl)cc2C(=O)c2ccccc2Cl)n1,TA1537,1,Negative
 gmtamesQSAR_6435,CSC1=NC(C)(c2ccccc2)C(=O)N1Nc1ccccc1,TA1537,1,Negative
 gmtamesQSAR_6438,CN(C)S(=O)(=O)Nc1ccc(CO[C@H]2C[C@H](O)[C@H](O)[C@H](O)[C@@H](CO)O2)cc1,TA1537,1,Negative
@@ -213,8 +202,6 @@ gmtamesQSAR_6599,O=c1[nH]c2c(c(=O)n1C1CCCCC1)CCC2,TA1537,1,Negative
 gmtamesQSAR_6600,O=C1CCc2ccccc2O1,TA1537,1,Negative
 gmtamesQSAR_6608,Clc1ccccc1-c1nnc(-c2ccccc2Cl)nn1,TA1537,1,Negative
 gmtamesQSAR_6623,O=C1O[C@@H](c2ccc(Cl)cc2)C[C@]1(Cn1cncn1)c1ccccc1,TA1537,1,Negative
-gmtamesQSAR_6628,CC=C(C)C(=O)OC1CCN2CC=C(COC(=O)C(O)(C(C)OC)C(C)(C)O)C12,TA1537,1,Negative
-gmtamesQSAR_6642,ClC1=C(Cl)C2(Cl)C3C4C=CC(C4)C3C1(Cl)C2(Cl)Cl,TA1537,1,Negative
 gmtamesQSAR_6682,O=C1OCCN1P(=O)(Cl)N1CCOC1=O,TA1537,1,Negative
 gmtamesQSAR_6738,O=C(O)CC(CC(=O)O)C1CCC[S+]([O-])C1,TA1537,1,Negative
 gmtamesQSAR_6755,CCOc1ccc(C(C)(C)COCc2cccc(Oc3ccccc3)c2)cc1,TA1537,1,Negative
@@ -236,7 +223,6 @@ gmtamesQSAR_6932,CC(C)(C)c1ccc(CCOc2ncnc3ccccc23)cc1,TA1537,1,Negative
 gmtamesQSAR_6965,N#CC(CCc1ccc(Cl)cc1)(Cn1cncn1)c1ccccc1,TA1537,1,Negative
 gmtamesQSAR_6976,c1ccc(Nc2cccc3ccccc23)cc1,TA1537,1,Negative
 gmtamesQSAR_6984,CC(C1CC1)C(O)(Cn1cncn1)c1ccc(Cl)cc1,TA1537,1,Negative
-gmtamesQSAR_7016,COc1cc2c(cc1OC)[C@@]13CCN4CC5=CCOC6CC(=O)N2C1[C@H]6[C@H]5C[C@H]43,TA1537,1,Negative
 gmtamesQSAR_7024,O=C(CCNNC(=O)c1ccncc1)NCc1ccccc1,TA1537,1,Negative
 gmtamesQSAR_7028,C1=Cc2cc3c4ccccc4ccc3c3cccc1c23,TA1537,1,Positive
 gmtamesQSAR_7033,CCC(=O)CCCCCC1NC(=O)C2CCCCN2C(=O)C([C@H](C)CC)NC(=O)C(CC2=CN(OC)C3C=CC=CC23)NC1=O,TA1537,1,Negative
@@ -255,7 +241,6 @@ gmtamesQSAR_7188,CCOC(=O)OC1=C(c2cc(C)ccc2C)C(=O)NC12CCC(OC)CC2,TA1537,1,Negativ
 gmtamesQSAR_7210,c1ccc2cc(Nc3ccc(Nc4ccc5ccccc5c4)cc3)ccc2c1,TA1537,1,Negative
 gmtamesQSAR_7229,O=C1CC(=Nc2ccccc2)C(=O)c2ccccc21,TA1537,1,Positive
 gmtamesQSAR_7234,Cc1cc(Cc2ccccc2)ccc1Cc1ccccc1,TA1537,1,Negative
-gmtamesQSAR_7268,CC1=CCC2C(C)=CCC(C(C)C)C2C1,TA1537,1,Negative
 gmtamesQSAR_7290,CCOC(=O)c1[nH]n(-c2ccc(S([O])(=O)=O)cc2)c(=O)c1N=Nc1ccc(S([O])(=O)=O)c2ccccc12,TA1537,1,Negative
 gmtamesQSAR_7295,O=C(O)c1cc(O)c(C(=O)C2CC2)c(O)c1,TA1537,1,Negative
 gmtamesQSAR_7328,O=c1c2ccccc2[se]n1-c1ccccc1,TA1537,1,Negative
@@ -274,9 +259,7 @@ gmtamesQSAR_7469,CCO[C@@H]1[C@@H](OC)[C@H](C)O[C@@H](OC2C[C@H]3CC[C@@H]4C(=CC5C(
 gmtamesQSAR_7494,N#CC1=C(c2cccc3c2OC(F)(F)O3)C(=O)NC1=O,TA1537,1,Negative
 gmtamesQSAR_7506,Cn1cc(C(=O)Nc2cccc3c2[C@@H]2CC[C@H]3[C@@H]2C(C)(C)O)c(C(F)F)n1,TA1537,1,Negative
 gmtamesQSAR_7519,c1ccc2sc(SN(C3CCCCC3)C3CCCCC3)nc2c1,TA1537,1,Negative
-gmtamesQSAR_7530,CC1(C)S[C@H]2C(NC(=O)C(N)c3ccccc3)C(=O)N2C1C(=O)O,TA1537,1,Negative
 gmtamesQSAR_7566,CCC1NC(=O)c2cc(S(N)(=O)=O)c(Cl)cc2N1,TA1537,1,Negative
-gmtamesQSAR_7582,O=c1[nH]c(=O)n([C@@H]2C[C@H](O)[C@@H](CO)O2)cc1CCCl,TA1537,1,Negative
 gmtamesQSAR_7583,C=CCC1(C(C)C#CCC)C(=O)N=C([O])N(C)C1=O,TA1537,1,Negative
 gmtamesQSAR_7590,c1ccc(-c2cccnc2)nc1,TA1537,1,Positive
 gmtamesQSAR_7630,CC(C)C(Nc1ccc(C(F)(F)F)cc1Cl)C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1,TA1537,1,Negative
@@ -308,7 +291,6 @@ gmtamesQSAR_7962,CC1(C)S[C@@H]2C(NC(=O)COc3ccccc3)C(=O)N2C1C([O])=O,TA1537,1,Neg
 gmtamesQSAR_7971,CSc1nnc(C(C)(C)C)c(=O)n1N,TA1537,1,Negative
 gmtamesQSAR_8029,O=C1C2(Cl)C3(Cl)C4(Cl)C(Cl)(Cl)C5(Cl)C3(Cl)C1(Cl)C5(Cl)C24Cl,TA1537,1,Negative
 gmtamesQSAR_8030,N=c1ccn2c(n1)O[C@H]1[C@H](O)[C@@H](CO)O[C@H]12,TA1537,1,Negative
-gmtamesQSAR_8032,COc1ccc2c3c1O[C@H]1[C@H](O)C=C[C@H]4[C@H](C2)N(C)CC[C@]341,TA1537,1,Negative
 gmtamesQSAR_8053,Cc1cccc(Nc2ccncc2S(=O)(=O)NC(=O)NC(C)C)c1,TA1537,1,Negative
 gmtamesQSAR_8058,NC(=O)OCC1C(=NC(=O)C(NOCC(=O)O)c2csc(N)n2)C(=O)N1S(=O)(=O)O,TA1537,1,Negative
 gmtamesQSAR_8068,c1ccc2c(c1)Oc1ccccc1S2,TA1537,1,Negative
@@ -317,10 +299,8 @@ gmtamesQSAR_8111,CCC([O])=c1c(O)cc(=C(O)O)cc1O,TA1537,1,Negative
 gmtamesQSAR_8119,c1ccc(-c2ccccn2)nc1,TA1537,1,Negative
 gmtamesQSAR_8120,CC1(C)CC/C(=C\c2ccc(Cl)cc2)C1(O)Cn1cncn1,TA1537,1,Negative
 gmtamesQSAR_8131,Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(OC3OC(CO)C(O)C(O)C3O)c1C2=O,TA1537,1,Positive
-gmtamesQSAR_8134,C[C@@H]1[C@@H](c2ccc(Cl)cc2)SC(=O)N1C(=O)N[C@H]1CC[C@H](O)CC1,TA1537,1,Negative
 gmtamesQSAR_8139,c1cc[n+]2c(c1)-c1cccc[n+]1CC2,TA1537,1,Negative
 gmtamesQSAR_8144,c1ccc(OP(Oc2ccccc2)Oc2ccccc2)cc1,TA1537,1,Negative
-gmtamesQSAR_8166,CC(/C=C\C=C(/C)C(=O)O[C@@H]1O[C@H](CO[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@H](O)[C@H]1O)=C/C=C\C=C(C)/C=C\C=C(/C)C(=O)O[C@@H]1O[C@H](CO[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@H](O)[C@H]1O,TA1537,1,Negative
 gmtamesQSAR_8169,CC(=O)Oc1cc(C=O)cc2c1C(COC(N)=O)C1(OC(C)=O)ON2CC2C1N2C(C)=O,TA1537,1,Negative
 gmtamesQSAR_8172,N#Cc1c(N)nc(NC2CC2)nc1N,TA1537,1,Negative
 gmtamesQSAR_8173,C=C(C)[C@H]1Cc2c(ccc3c2O[C@@H]2COc4cc(OC)c(OC)cc4C2C3=O)O1,TA1537,1,Negative

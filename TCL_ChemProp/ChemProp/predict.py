@@ -11,6 +11,7 @@ from chemprop.data import MoleculeDatapoint, MoleculeDataset, build_dataloader
 from chemprop.models import MPNN
 
 STRAINS = ["TA1535", "TA1538", "TA104", "TA97", "TA98", "TA100", "TA102", "TA1537"]
+LABEL_MAP = {"Negative": 0, "Positive": 1}
 
 
 def ames_condition_vector(strain: str, s9: int) -> np.ndarray:
@@ -19,6 +20,13 @@ def ames_condition_vector(strain: str, s9: int) -> np.ndarray:
     vec[STRAINS.index(strain)] = 1.0
     vec[8] = float(s9)
     return vec
+
+
+def build_task_name(strain: str, s9: int) -> str:
+    """Build task name from strain and S9 state."""
+    s9_flag = int(s9)
+    suffix = "with_S9" if s9_flag == 1 else "without_S9"
+    return f"{strain}_{suffix}"
 
 
 def main():
@@ -56,12 +64,27 @@ def main():
     batch_preds = trainer.predict(model, loader)
     preds = np.concatenate([p.cpu().numpy() for p in batch_preds], axis=0)
 
-    # Save results
+    # Save results in the expected output schema.
     results = df.loc[valid_indices].copy().reset_index(drop=True)
     results["prediction_prob"] = preds[:, 0]
-    results["prediction"] = (preds[:, 0] >= 0.5).astype(int)
-    results["prediction_label"] = results["prediction"].map({0: "Negative", 1: "Positive"})
-    results.to_csv(args.output, index=False)
+    results["Binary Prediction"] = (results["prediction_prob"] >= 0.5).astype(int)
+    results["Task"] = results.apply(
+        lambda row: build_task_name(row["Strain"], row["S9"]),
+        axis=1,
+    )
+    results["Ground Truth"] = results["Endpoint"].map(LABEL_MAP)
+
+    output_df = results[
+        [
+            "gmtamesQSAR_ID",
+            "SMILES",
+            "Task",
+            "Ground Truth",
+            "Binary Prediction",
+            "prediction_prob",
+        ]
+    ]
+    output_df.to_csv(args.output, index=False)
     print(f"Predictions saved to {args.output}")
 
 

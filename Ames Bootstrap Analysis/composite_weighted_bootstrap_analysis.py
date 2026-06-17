@@ -20,7 +20,8 @@ from sklearn.metrics import (
     balanced_accuracy_score,
     matthews_corrcoef,
     confusion_matrix,
-    recall_score
+    recall_score,
+    precision_score
 )
 
 np.random.seed(42)
@@ -34,6 +35,10 @@ def specificity_score(y_true, y_pred):
     tn, fp, fn, tp = confusion_matrix(y_true, y_pred, labels=[0, 1]).ravel()
     denom = tn + fp
     return tn / denom if denom != 0 else np.nan
+
+
+def ppv_score(y_true, y_pred):
+    return precision_score(y_true, y_pred, zero_division=0)
 
 
 def bootstrap_resample_stratified(y_true: pd.Series, y_pred: pd.Series):
@@ -110,22 +115,33 @@ def bootstrap_task_averaged_ci(task_data_dict, metric_func, n_bootstraps=1000, c
     }
 
 
-def load_from_csv(csv_path, task_col="Task", true_col="Ground Truth", pred_col="Binary Prediction", sample_col=None):
+def load_task_data_from_dataframe(
+    df: pd.DataFrame,
+    task_col: str | None = "Task",
+    true_col: str = "Ground Truth",
+    pred_col: str = "Binary Prediction",
+    sample_col: str | None = None
+) -> dict[str, tuple[pd.Series, pd.Series]]:
 
-    df = pd.read_csv(csv_path)
-
-    required_cols = [task_col, true_col, pred_col]
+    required_cols = [true_col, pred_col]
     missing = [c for c in required_cols if c not in df.columns]
     if missing:
         raise ValueError(f"Missing required columns: {missing}. Found columns: {list(df.columns)}")
 
-    tasks = df[task_col].unique()
-    print(f"Loading data from CSV: {csv_path}")
-    print(f"Found {len(tasks)} tasks: {list(tasks)}\n")
+    if task_col and task_col in df.columns:
+        tasks = list(df[task_col].unique())
+    else:
+        tasks = ["ALL"]
+        task_col = None
+
+    print(f"Found {len(tasks)} task(s): {tasks}\n")
 
     task_data = {}
     for task in tasks:
-        task_df = df[df[task_col] == task].copy()
+        if task_col:
+            task_df = df[df[task_col] == task].copy()
+        else:
+            task_df = df.copy()
 
         if sample_col and sample_col in df.columns:
             task_df = task_df.sort_values(by=sample_col).reset_index(drop=True)
@@ -140,6 +156,19 @@ def load_from_csv(csv_path, task_col="Task", true_col="Ground Truth", pred_col="
 
     print()
     return task_data
+
+
+def load_from_csv(csv_path, task_col="Task", true_col="Ground Truth", pred_col="Binary Prediction", sample_col=None):
+
+    df = pd.read_csv(csv_path)
+    print(f"Loading data from CSV: {csv_path}")
+    return load_task_data_from_dataframe(
+        df=df,
+        task_col=task_col,
+        true_col=true_col,
+        pred_col=pred_col,
+        sample_col=sample_col
+    )
 
 
 def run_analysis(task_data_dict, metric_func, metric_name, n_bootstraps=1000, ci_level=0.95):
@@ -186,6 +215,7 @@ def run_all_metrics(task_data_dict=None, csv_path=None, n_bootstraps=1000, ci_le
         "BA": balanced_accuracy_score,
         "MCC": matthews_corrcoef,
         "Specificity": specificity_score,
+        "PPV": ppv_score,
     }
 
     all_results = {}
@@ -216,47 +246,125 @@ def run_all_metrics(task_data_dict=None, csv_path=None, n_bootstraps=1000, ci_le
     return all_results
 
 
-def get_csv_paths(dir_path: str) -> list[str]:
+def get_csv_paths(dir_path: Path | str) -> list[Path]:
     p = Path(dir_path)
     if not p.is_dir():
         return []
-    return [str(f) for f in p.glob("*.csv")]
+    return sorted(p.glob("*.csv"))
+
+
+def is_wide_prediction_file(csv_path: Path | str) -> bool:
+    cols = set(pd.read_csv(csv_path, nrows=0).columns)
+    has_endpoint = "Endpoint" in cols
+    has_wide_predictions = any(c.endswith("_Binary_Prediction") for c in cols)
+    has_long_prediction_col = "Binary Prediction" in cols
+    return has_endpoint and has_wide_predictions and not has_long_prediction_col
+
+
+def run_wide_prediction_file_analysis(
+    csv_path: Path | str,
+    n_bootstraps: int = 1000,
+    ci_level: float = 0.95
+) -> dict[str, dict]:
+    csv_path = Path(csv_path)
+    df = pd.read_csv(csv_path)
+    print(f"Loading wide-format data from CSV: {csv_path}")
+
+    prediction_cols = sorted([c for c in df.columns if c.endswith("_Binary_Prediction")])
+    if not prediction_cols:
+        raise ValueError(f"No *_Binary_Prediction columns found in {csv_path}")
+
+    all_models_results = {}
+    for pred_col in prediction_cols:
+        model_name = pred_col.replace("_Binary_Prediction", "")
+        print(f"\nRunning model from wide file column: {pred_col}")
+        task_data = load_task_data_from_dataframe(
+            df=df,
+            task_col=None,
+            true_col="Endpoint",
+            pred_col=pred_col
+        )
+        all_models_results[model_name] = run_all_metrics(
+            task_data_dict=task_data,
+            n_bootstraps=n_bootstraps,
+            ci_level=ci_level,
+            save_csv=None,
+            formatted_col_name=model_name
+        )
+        print(f"\nAnalysis completed for model: {model_name}")
+
+    return all_models_results
+
+
+def run_directory_analysis(
+    input_dir: Path | str,
+    output_csv_path: Path | str,
+    n_bootstraps: int = 1000,
+    ci_level: float = 0.95
+) -> pd.DataFrame | None:
+    csv_paths = get_csv_paths(input_dir)
+
+    if not csv_paths:
+        print(f"No CSV files found in {input_dir}")
+        return None
+
+    all_models_results = {}
+    for csv_path in csv_paths:
+        if is_wide_prediction_file(csv_path):
+            wide_results = run_wide_prediction_file_analysis(
+                csv_path=csv_path,
+                n_bootstraps=n_bootstraps,
+                ci_level=ci_level
+            )
+            all_models_results.update(wide_results)
+            continue
+
+        model_name = csv_path.stem
+        all_models_results[model_name] = run_all_metrics(
+            csv_path=str(csv_path),
+            n_bootstraps=n_bootstraps,
+            ci_level=ci_level,
+            save_csv=None,
+            formatted_col_name=model_name
+        )
+        print(f"\nAnalysis completed for model: {model_name}")
+
+    ci_percent = int(round(ci_level * 100))
+    rows = []
+    for metric_name in next(iter(all_models_results.values())).keys():
+        row = {"Metric": metric_name}
+        for model_name, results in all_models_results.items():
+            r = results[metric_name]
+            row[f"{model_name} ({ci_percent}% CI)"] = f"{r['avg_observed']:.2f} ({r['avg_lower_ci']:.2f}-{r['avg_upper_ci']:.2f})"
+        rows.append(row)
+
+    merged = pd.DataFrame(rows)
+    output_csv_path = Path(output_csv_path)
+    output_csv_path.parent.mkdir(parents=True, exist_ok=True)
+    merged.to_csv(output_csv_path, index=False)
+    print(f"\nSaved results to {output_csv_path}")
+    return merged
 
 
 
 if __name__ == "__main__":
 
-    list_of_paths = get_csv_paths("Prediction_Data")
+    script_dir = Path(__file__).resolve().parent
+    raw_data_dir = script_dir / "Raw_Prediction_Data"
+    output_dir = script_dir / "Bootstrapped_Data_95_CI"
 
-    model_names_dict = {}
-    for curr_path in list_of_paths:
-        curr_model_name = curr_path.split("/")[-1].split(".")[0]
-        model_names_dict[curr_model_name] = curr_path
+    datasets = {
+        "foil_test_preds_bootstrap_results.csv": raw_data_dir / "Foil_Test_Preds",
+        "lui_test_preds_bootstrap_results.csv": raw_data_dir / "Lui_Test_Preds",
+    }
 
-    output_path = Path("Bootstrapped_Data_95_CI")
-    output_path.mkdir(parents=True, exist_ok=True)
-
-    all_models_results = {}
-    for model_name, csv_path in model_names_dict.items():
-        all_models_results[model_name] = run_all_metrics(
-            csv_path=csv_path,
+    for output_file_name, input_dir in datasets.items():
+        print("\n" + "=" * 80)
+        print(f"Running bootstrap analysis for: {input_dir}")
+        print("=" * 80)
+        run_directory_analysis(
+            input_dir=input_dir,
+            output_csv_path=output_dir / output_file_name,
             n_bootstraps=1000,
-            ci_level=0.95,
-            save_csv=None,
-            formatted_col_name=model_name
+            ci_level=0.95
         )
-        print("\nAnalysis completed!")
-
-    if all_models_results:
-        ci_percent = 95
-        rows = []
-        for metric_name in next(iter(all_models_results.values())).keys():
-            row = {"Metric": metric_name}
-            for model_name, results in all_models_results.items():
-                r = results[metric_name]
-                row[f"{model_name} ({ci_percent}% CI)"] = f"{r['avg_observed']:.2f} ({r['avg_lower_ci']:.2f}-{r['avg_upper_ci']:.2f})"
-            rows.append(row)
-        merged = pd.DataFrame(rows)
-        merged_path = output_path / "all_models_bootstrap_results.csv"
-        merged.to_csv(merged_path, index=False)
-        print(f"\nSaved results to {merged_path}")

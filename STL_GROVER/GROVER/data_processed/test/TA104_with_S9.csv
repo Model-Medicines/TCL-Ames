@@ -14,7 +14,6 @@ CC(C)=CC1C(C(=O)OCc2coc(Cc3ccccc3)c2)C1(C)C,0
 O=C1C=CC(=O)C(c2ccccc2)=C1,0
 O=C1CC(=Nc2ccccc2)C(=O)c2ccccc21,1
 C/C=C/c1cc2c(c(=O)o1)C(=O)C(O)C(C)O2,0
-O=c1[nH]c(=O)n([C@@H]2C[C@H](O)[C@@H](CO)O2)cc1CCCl,0
 C1=Cc2c3ccc4cccc5ccc(c6cccc1c26)c3c45,1
 O=C1CCCCCCCCCCCC(=O)OCCO1,0
 O=[N+]([O-])c1ccc2c(c1)CCc1cc3c(cc1-2)CCCC3,1
