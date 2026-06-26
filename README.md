@@ -6,7 +6,7 @@ Code and data for the paper:
 >
 > Tyler Umansky, Virgil Woods, Sean M. Russell, Daniel Haders
 >
-> bioRxiv 2025. DOI: [10.1101/2025.03.20.644379](https://doi.org/10.1101/2025.03.20.644379)
+> ACS CRT 2026. DOI: [10.1021/acs.chemrestox.6c00082](https://doi.org/10.1021/acs.chemrestox.6c00082)
 
 ## Repository Structure
 
