@@ -8,6 +8,11 @@ Code and data for the paper:
 >
 > ACS CRT 2026. DOI: [10.1021/acs.chemrestox.6c00082](https://doi.org/10.1021/acs.chemrestox.6c00082)
 
+## Model Availability
+
+**AmesNet model weights are not publicly available.** However, the trained weights for all benchmark models evaluated in the AmesNet publication, including their Task-Conditioned Learning (TCL) implementations, are publicly available through this repository
+
+
 ## Repository Structure
 
 | Directory | Description |
